@@ -229,7 +229,7 @@ function layoffresoapcher () {
         laidOffResoapcherCount++;
         document.getElementById("resoapchrCount").innerHTML = resoapcherCount + "(" + laidOffResoapcherCount + ")" + " workers";
     }
-
+}
 
 function recruitmarketer () {
     if (laidOffMarketerCount >= 1) {
@@ -275,6 +275,7 @@ function recruitbuyer () {
             document.getElementById("buyerCount").innerHTML = buyerCount + "(" + laidOffBuyerCount + ")" + " workers";
         } else {
             document.getElementById("buyerCount").innerHTML = buyerCount + " workers";
+        }
     }
 }
 
