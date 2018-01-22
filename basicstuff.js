@@ -297,6 +297,7 @@ function recruitresoapcher () {
             document.getElementById("resoapcherCount").innerHTML = resoapcherCount + "(" + laidOffResoapcherCount + ")" + " workers";
         } else {
             document.getElementById("buyerCount").innerHTML = resoapcherCount + "workers";
+        }
     }
 }
   
