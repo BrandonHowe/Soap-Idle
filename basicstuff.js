@@ -229,6 +229,75 @@ function layoffresoapcher () {
         laidOffResoapcherCount++;
         document.getElementById("resoapchrCount").innerHTML = resoapcherCount + "(" + laidOffResoapcherCount + ")" + " workers";
     }
+
+
+function recruitmarketer () {
+    if (laidOffMarketerCount >= 1) {
+        marketerCount++;
+        laidOffMarketerCount--;
+        if (laidOffMarketerCount >= 1)
+            document.getElementById("marketerCount").innerHTML = marketerCount + "(" + laidOffMarketerCount + ")" + " workers";
+        } else {
+            document.getElementById("marketerCount").innerHTML = marketerCount + " workers";
+        }
+    }
+}
+
+function recruitmarketermanager () {
+    if (laidOffMarketerManagerCount >= 1) {
+        marketerManagerCount++;
+        laidOffMarketerManagerCount--;
+        if (laidOffMarketerManagerCount >= 1)
+            document.getElementById("marketerManagerCount").innerHTML = marketerManagerCount + "(" + laidOffMarketerManagerCount + ")" + " workers";
+        } else {
+            document.getElementById("marketerManagerCount").innerHTML = marketerManagerCount + " managers";
+        }
+    }
+}
+
+function recruitmarketermanager2 () {
+    if (laidOffMarketerManagerCount2 >= 1) {
+        marketerManagerCount2++;
+        laidOffMarketerManagerCount2--;
+        if (laidOffMarketerManagerCount2 >= 1)
+            document.getElementById("marketerManagerCount2").innerHTML = marketerManagerCount2 + "(" + laidOffMarketerManagerCount2 + ")" + " workers";
+        } else {
+            document.getElementById("marketerManagerCount2").innerHTML = marketerManagerCount2 + " managers";
+        }
+    }
+}
+
+function recruitbuyer () {
+    if (laidOffBuyerCount >= 1) {
+        buyerCount++;
+        laidOffBuyerCount--;
+        if (laidOffBuyerCount >= 1) {
+            document.getElementById("buyerCount").innerHTML = buyerCount + "(" + laidOffBuyerCount + ")" + " workers";
+        } else {
+            document.getElementById("buyerCount").innerHTML = buyerCount + " workers";
+    }
+}
+
+function recruitbuyermanager () {
+    if (laidOffBuyerManagerCount >= 1) {
+        buyerManagerCount++;
+        laidOffBuyerManagerCount--;
+        if (laidOffBuyerManagerCount >= 1) {
+            document.getElementById("buyerCount").innerHTML = buyerManagerCount + "(" + laidOffBuyerManagerCount + ")" + " managers";
+        } else {
+            document.getElementById("buyerCount").innerHTML = buyerManagerCount + " managers";
+    }
+}
+
+function recruitresoapcher () {
+    if (laidOffResoapcherCount >= 1) {
+        resoapcherCount++;
+        laidOffResoapcherCount--;
+        if (laidOffResoapcherCount >= 1) {
+            document.getElementById("resoapcherCount").innerHTML = resoapcherCount + "(" + laidOffResoapcherCount + ")" + " workers";
+        } else {
+            document.getElementById("buyerCount").innerHTML = resoapcherCount + "workers";
+    }
 }
 
 function techbettermarketing1 () {
@@ -440,6 +509,12 @@ document.getElementById("layoffmarketermanager2").addEventListener("click", layo
 document.getElementById("layoffbuyer").addEventListener("click", layoffbuyer);
 document.getElementById("layoffbuyermanager").addEventListener("click", layoffbuyermanager);
 document.getElementById("layoffresoapcher").addEventListener("click", layoffresoapcher);
+document.getElementById("recruitmarketer").addEventListener("click", recruitmarketer);
+document.getElementById("recruitmarketermanager").addEventListener("click", recruitmarketermanager);
+document.getElementById("recruitmarketermanager2").addEventListener("click", recruitmarketermanager2);
+document.getElementById("recruitbuyer").addEventListener("click", recruitbuyer);
+document.getElementById("recruitbuyermanager").addEventListener("click", recrutibuyermanager);
+document.getElementById("recruitresoapcher").addEventListener("click", reruitresoapcher);
 document.getElementById("techbettermarketing1").addEventListener("click", techbettermarketing1);
 document.getElementById("techbettermarketing2").addEventListener("click", techbettermarketing2);
 document.getElementById("techbettermarketing3").addEventListener("click", techbettermarketing3);
