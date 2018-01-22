@@ -247,7 +247,7 @@ function recruitmarketermanager () {
     if (laidOffMarketerManagerCount >= 1) {
         marketerManagerCount++;
         laidOffMarketerManagerCount--;
-        if (laidOffMarketerManagerCount >= 1)
+        if (laidOffMarketerManagerCount >= 1) {
             document.getElementById("marketerManagerCount").innerHTML = marketerManagerCount + "(" + laidOffMarketerManagerCount + ")" + " workers";
         } else {
             document.getElementById("marketerManagerCount").innerHTML = marketerManagerCount + " managers";
