@@ -235,7 +235,7 @@ function recruitmarketer () {
     if (laidOffMarketerCount >= 1) {
         marketerCount++;
         laidOffMarketerCount--;
-        if (laidOffMarketerCount >= 1)
+        if (laidOffMarketerCount >= 1) {
             document.getElementById("marketerCount").innerHTML = marketerCount + "(" + laidOffMarketerCount + ")" + " workers";
         } else {
             document.getElementById("marketerCount").innerHTML = marketerCount + " workers";
@@ -259,7 +259,7 @@ function recruitmarketermanager2 () {
     if (laidOffMarketerManagerCount2 >= 1) {
         marketerManagerCount2++;
         laidOffMarketerManagerCount2--;
-        if (laidOffMarketerManagerCount2 >= 1)
+        if (laidOffMarketerManagerCount2 >= 1) {
             document.getElementById("marketerManagerCount2").innerHTML = marketerManagerCount2 + "(" + laidOffMarketerManagerCount2 + ")" + " workers";
         } else {
             document.getElementById("marketerManagerCount2").innerHTML = marketerManagerCount2 + " managers";
@@ -303,7 +303,7 @@ function recruitresoapcher () {
 function firemarketer () {
     if (marketerCount >= 1) {
         marketerCount--;
-        if (laidOffMarketerCount >= 1)
+        if (laidOffMarketerCount >= 1) {
             document.getElementById("marketerCount").innerHTML = marketerCount + "(" + laidOffMarketerCount + ")" + " workers";
         } else {
             document.getElementById("marketerCount").innerHTML = marketerCount + " workers";
@@ -336,7 +336,7 @@ function firemarketermanager2 () {
 function firebuyer () {
     if (buyerCount >= 1) {
        buyerCount--;
-        if (laidOffBuyerCount >= 1)
+        if (laidOffBuyerCount >= 1) {
             document.getElementById("buyerCount").innerHTML = buyerCount + "(" + laidOffBuyerCount + ")" + " workers";
         } else {
             document.getElementById("buyerCount").innerHTML = buyerCount + " workers";
@@ -347,7 +347,7 @@ function firebuyer () {
 function firebuyermanager () {
     if (buyerManagerCount >= 1) {
         buyerManagerCount--;
-        if (laidOffBuyerManagerCount >= 1)
+        if (laidOffBuyerManagerCount >= 1) {
             document.getElementById("buyerManagerCount").innerHTML = buyerManagerCount + "(" + laidOffBuyerManagerCount + ")" + " managers";
         } else {
             document.getElementById("buyerManagerCount").innerHTML = buyerManagerCount + " managers";
@@ -358,7 +358,7 @@ function firebuyermanager () {
 function fireresoapcher () {
     if (resoapcherCount >= 1) {
         resoapcherCount--;
-        if (laidOffResoapcherCount >= 1)
+        if (laidOffResoapcherCount >= 1) {
             document.getElementById("resoapcherCount").innerHTML = resoapcherCount + "(" + laidOffResoapcherCount + ")" + " workers";
         } else {
             document.getElementById("resoapcherCount").innerHTML = resoapcherCount + " workers";
