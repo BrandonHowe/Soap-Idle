@@ -287,6 +287,7 @@ function recruitbuyermanager () {
             document.getElementById("buyerCount").innerHTML = buyerManagerCount + "(" + laidOffBuyerManagerCount + ")" + " managers";
         } else {
             document.getElementById("buyerCount").innerHTML = buyerManagerCount + " managers";
+        }
     }
 }
 
