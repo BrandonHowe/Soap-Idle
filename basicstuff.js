@@ -23,19 +23,19 @@ let workersbought = 0;
 let philosoaphybought = 0;
 let megamarketingbought = 0;
 
-document.getElementById("qualitysoapbad").style.display = "";
-document.getElementById("bettermarketing2row").style.display = "";
-document.getElementById("bettermarketing3row").style.display = "";
-document.getElementById("bettermarketing4row").style.display = "";
-document.getElementById("bettermarketing5row").style.display = "";
-document.getElementById("betterresoapch2row").style.display = "";
-document.getElementById("discount2row").style.display = "";
-document.getElementById("philosoaphyrow").style.display = "";
-document.getElementById("workersrow").style.display = "";
-document.getElementById("inventionrow").style.display = "";
-document.getElementById("megamarketing1row").style.display = "";
-document.getElementById("marketermanagerrow").style.display = "";
-document.getElementById("marketermanager2row").style.display = "";
+document.getElementById("qualitysoapbad").style.display = "none";
+document.getElementById("bettermarketing2row").style.display = "none";
+document.getElementById("bettermarketing3row").style.display = "none";
+document.getElementById("bettermarketing4row").style.display = "none";
+document.getElementById("bettermarketing5row").style.display = "none";
+document.getElementById("betterresoapch2row").style.display = "none";
+document.getElementById("discount2row").style.display = "none";
+document.getElementById("philosoaphyrow").style.display = "none";
+document.getElementById("workersrow").style.display = "none";
+document.getElementById("inventionrow").style.display = "none";
+document.getElementById("megamarketing1row").style.display = "none";
+document.getElementById("marketermanagerrow").style.display = "none";
+document.getElementById("marketermanager2row").style.display = "none";
 
 function background () {
     if (Math.floor(Math.random * 10000) === 1) {
