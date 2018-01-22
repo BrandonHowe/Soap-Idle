@@ -8,17 +8,23 @@ let soapResoapchModifier = 1;
 let soapInventory = 0;
 let soapMaxInventory = 50;
 let soapQuality = ["terrible", "bad", "mediocre", "so-so", "good", "amazing", "godly"];
-let goals = ["Reach $15", "Kill yourself"];
+let goals = ["Reach $15", "eat stew"];
 let soapQualityNumber = 0;
 let soapience = 0;
 let soapienceMultiplier = 1;
 let tutorial3showing = 0;
 let marketerCount = 0;
-let buyerCount = 0;
-let resoapcherCount = 0;
 let marketerManagerCount = 0;
 let marketerManagerCount2 = 0;
+let buyerCount = 0;
 let buyerManagerCount = 0;
+let resoapcherCount = 0;
+let laidOffMarketerCount = 0;
+let laidOffMarketerManagerCount = 0;
+let laidOffMarketerManager2Count = 0;
+let laidOffBuyerCount = 0;
+let laidOffBuyerManagerCount = 0;
+let laidOffResoapcherCount = 0;
 let workersbought = 0;
 let philosoaphybought = 0;
 let megamarketingbought = 0;
@@ -159,7 +165,7 @@ function buyResoapcher () {
 function buyMarketerManager () {
     if (money >= 50) {
         marketerManagerCount++;
-        money = money - 50;
+        money = (+money - 50).toFixed(2);
         setInterval(buyMarketer, (5000 / marketerManagerCount));
         document.getElementById("money").innerHTML = "Money = $" + money;
         document.getElementById("marketermanagers").innerHTML = marketerManagerCount + " managers";
@@ -170,10 +176,193 @@ function buyMarketerManager () {
 function buyMarketerManager2 () {
     if (money >= 150) {
         marketerManagerCount2++;
-        money = +money - 150;
+        money = (+money - 150).toFixed(2);
         setInterval(buyMarketerManager, (5000 / marketerManagerCount2));
         document.getElementById("money").innerHTML = "Money = $" + money;
         document.getElementById("marketermanagers2").innerHTML = marketerManagerCount2 + " managers";
+    }
+}
+
+function layoffmarketer () {
+    if (marketerCount >= 1) {
+        marketerCount--;
+        laidOffMarketerCount++;
+        document.getElementById("marketerCount").innerHTML = marketerCount + "(" + laidOffMarketerCount + ")" + " workers";
+    }
+}
+
+function layoffmarketermanager () {
+    if (marketerManagerCount >= 1) {
+        marketerManagerCount--;
+        laidOffMarketerManagerCount++;
+        document.getElementById("marketerManagerCount").innerHTML = marketerManagerCount + "(" + laidOffMarketerManagerCount + ")" + " managers";
+    }
+}
+
+function layoffmarketermanager2 () {
+    if (marketerManagerCount2 >= 1) {
+        marketerManagerCount2--;
+        laidOffMarketerManagerCount2++;
+        document.getElementById("marketerManagerCount2").innerHTML = marketerManagerCoun2 + "(" + laidOffMarketerManagerCount2 + ")" + " managers";
+    }
+}
+
+function layoffbuyer () {
+    if (buyerCount >= 1) {
+        buyerCount--;
+        laidOffBuyerCount++;
+        document.getElementById("buyerCount").innerHTML = buyerCount + "(" + laidOffBuyerCount + ")" + " workers";
+    }
+}
+
+function layoffbuyermanager () {
+    if (buyerManagerCount >= 1) {
+        buyerManagerCount--;
+        laidOffBuyerManagerCount++;
+        document.getElementById("buyerManagerCount").innerHTML = buyerManagerCount + "(" + laidOffBuyerManagerCount + ")" + " managers";
+    }
+}
+
+function layoffresoapcher () {
+    if (resoapcherCount >= 1) {
+        resoapcherCount--;
+        laidOffResoapcherCount++;
+        document.getElementById("resoapchrCount").innerHTML = resoapcherCount + "(" + laidOffResoapcherCount + ")" + " workers";
+    }
+
+
+function recruitmarketer () {
+    if (laidOffMarketerCount >= 1) {
+        marketerCount++;
+        laidOffMarketerCount--;
+        if (laidOffMarketerCount >= 1)
+            document.getElementById("marketerCount").innerHTML = marketerCount + "(" + laidOffMarketerCount + ")" + " workers";
+        } else {
+            document.getElementById("marketerCount").innerHTML = marketerCount + " workers";
+        }
+    }
+}
+
+function recruitmarketermanager () {
+    if (laidOffMarketerManagerCount >= 1) {
+        marketerManagerCount++;
+        laidOffMarketerManagerCount--;
+        if (laidOffMarketerManagerCount >= 1)
+            document.getElementById("marketerManagerCount").innerHTML = marketerManagerCount + "(" + laidOffMarketerManagerCount + ")" + " workers";
+        } else {
+            document.getElementById("marketerManagerCount").innerHTML = marketerManagerCount + " managers";
+        }
+    }
+}
+
+function recruitmarketermanager2 () {
+    if (laidOffMarketerManagerCount2 >= 1) {
+        marketerManagerCount2++;
+        laidOffMarketerManagerCount2--;
+        if (laidOffMarketerManagerCount2 >= 1)
+            document.getElementById("marketerManagerCount2").innerHTML = marketerManagerCount2 + "(" + laidOffMarketerManagerCount2 + ")" + " workers";
+        } else {
+            document.getElementById("marketerManagerCount2").innerHTML = marketerManagerCount2 + " managers";
+        }
+    }
+}
+
+function recruitbuyer () {
+    if (laidOffBuyerCount >= 1) {
+        buyerCount++;
+        laidOffBuyerCount--;
+        if (laidOffBuyerCount >= 1) {
+            document.getElementById("buyerCount").innerHTML = buyerCount + "(" + laidOffBuyerCount + ")" + " workers";
+        } else {
+            document.getElementById("buyerCount").innerHTML = buyerCount + " workers";
+    }
+}
+
+function recruitbuyermanager () {
+    if (laidOffBuyerManagerCount >= 1) {
+        buyerManagerCount++;
+        laidOffBuyerManagerCount--;
+        if (laidOffBuyerManagerCount >= 1) {
+            document.getElementById("buyerCount").innerHTML = buyerManagerCount + "(" + laidOffBuyerManagerCount + ")" + " managers";
+        } else {
+            document.getElementById("buyerCount").innerHTML = buyerManagerCount + " managers";
+    }
+}
+
+function recruitresoapcher () {
+    if (laidOffResoapcherCount >= 1) {
+        resoapcherCount++;
+        laidOffResoapcherCount--;
+        if (laidOffResoapcherCount >= 1) {
+            document.getElementById("resoapcherCount").innerHTML = resoapcherCount + "(" + laidOffResoapcherCount + ")" + " workers";
+        } else {
+            document.getElementById("buyerCount").innerHTML = resoapcherCount + "workers";
+    }
+}
+  
+function firemarketer () {
+    if (marketerCount >= 1) {
+        marketerCount--;
+        if (laidOffMarketerCount >= 1)
+            document.getElementById("marketerCount").innerHTML = marketerCount + "(" + laidOffMarketerCount + ")" + " workers";
+        } else {
+            document.getElementById("marketerCount").innerHTML = marketerCount + " workers";
+        }
+    }
+}
+
+function firemarketermanager () {
+    if (marketerManagerCount >= 1) {
+        marketerManagerCount--;
+        if (laidOffMarketerManagerCount >= 1)
+            document.getElementById("marketerManagerCount").innerHTML = marketerManagerCount + "(" + laidOffMarketerManagerCount + ")" + " managers";
+        } else {
+            document.getElementById("marketerManagerCount").innerHTML = marketerManagerCount + " managers";
+        }
+    }
+}
+
+function firemarketermanager2 () {
+    if (marketerManagerCount2 >= 1) {
+        marketerManagerCount2--;
+        if (laidOffMarketerManagerCount2 >= 1)
+            document.getElementById("marketerManagerCount2").innerHTML = marketerManagerCount2 + "(" + laidOffMarketerManagerCount2 + ")" + " managers";
+        } else {
+            document.getElementById("marketerManagerCount2").innerHTML = marketerManagerCount2 + " managers";
+        }
+    }
+}
+
+function firebuyer () {
+    if (buyerCount >= 1) {
+       buyerCount--;
+        if (laidOffBuyerCount >= 1)
+            document.getElementById("buyerCount").innerHTML = buyerCount + "(" + laidOffBuyerCount + ")" + " workers";
+        } else {
+            document.getElementById("buyerCount").innerHTML = buyerCount + " workers";
+        }
+    }
+}
+
+function firebuyermanager () {
+    if (buyerManagerCount >= 1) {
+        buyerManagerCount--;
+        if (laidOffBuyerManagerCount >= 1)
+            document.getElementById("buyerManagerCount").innerHTML = buyerManagerCount + "(" + laidOffBuyerManagerCount + ")" + " managers";
+        } else {
+            document.getElementById("buyerManagerCount").innerHTML = buyerManagerCount + " managers";
+        }
+    }
+}
+
+function fireresoapcher () {
+    if (resoapcherCount >= 1) {
+        resoapcherCount--;
+        if (laidOffResoapcherCount >= 1)
+            document.getElementById("resoapcherCount").innerHTML = resoapcherCount + "(" + laidOffResoapcherCount + ")" + " workers";
+        } else {
+            document.getElementById("resoapcherCount").innerHTML = resoapcherCount + " workers";
+        }
     }
 }
 
@@ -379,6 +568,25 @@ document.getElementById("buyresoapcher").addEventListener("click", buyResoapcher
 document.getElementById("buymarketermanager").addEventListener("click", buyMarketerManager);
 document.getElementById("buymarketermanager2").addEventListener("click", buyMarketerManager2);
 document.getElementById("buybuyer").addEventListener("click", buyBuyer);
+document.getElementById("buybuyermanager").addEventListener("click", buyBuyerManager);
+document.getElementById("layoffmarketer").addEventListener("click", layoffmarketer);
+document.getElementById("layoffmarketermanager").addEventListener("click", layoffmarketermanager);
+document.getElementById("layoffmarketermanager2").addEventListener("click", layoffmarketermanager2);
+document.getElementById("layoffbuyer").addEventListener("click", layoffbuyer);
+document.getElementById("layoffbuyermanager").addEventListener("click", layoffbuyermanager);
+document.getElementById("layoffresoapcher").addEventListener("click", layoffresoapcher);
+document.getElementById("recruitmarketer").addEventListener("click", recruitmarketer);
+document.getElementById("recruitmarketermanager").addEventListener("click", recruitmarketermanager);
+document.getElementById("recruitmarketermanager2").addEventListener("click", recruitmarketermanager2);
+document.getElementById("recruitbuyer").addEventListener("click", recruitbuyer);
+document.getElementById("recruitbuyermanager").addEventListener("click", recruitbuyermanager);
+document.getElementById("recruitresoapcher").addEventListener("click", recruitresoapcher);
+document.getElementById("firemarketer").addEventListener("click", firemarketer);
+document.getElementById("firemarketermanager").addEventListener("click", firemarketermanager);
+document.getElementById("firemarketermanager2").addEventListener("click", firemarketermanager2);
+document.getElementById("firebuyer").addEventListener("click", firebuyer);
+document.getElementById("firebuyermanager").addEventListener("click", firebuyermanager);
+document.getElementById("fireresoapcher").addEventListener("click", fireresoapcher);
 document.getElementById("techbettermarketing1").addEventListener("click", techbettermarketing1);
 document.getElementById("techbettermarketing2").addEventListener("click", techbettermarketing2);
 document.getElementById("techbettermarketing3").addEventListener("click", techbettermarketing3);
