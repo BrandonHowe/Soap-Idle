@@ -8,17 +8,23 @@ let soapResoapchModifier = 1;
 let soapInventory = 0;
 let soapMaxInventory = 50;
 let soapQuality = ["terrible", "bad", "mediocre", "so-so", "good", "amazing", "godly"];
-let goals = ["Reach $15", "Kill yourself"];
+let goals = ["Reach $15", "eat stew"];
 let soapQualityNumber = 0;
 let soapience = 0;
 let soapienceMultiplier = 1;
 let tutorial3showing = 0;
 let marketerCount = 0;
-let buyerCount = 0;
-let resoapcherCount = 0;
 let marketerManagerCount = 0;
 let marketerManagerCount2 = 0;
+let buyerCount = 0;
 let buyerManagerCount = 0;
+let resoapcherCount = 0;
+let laidOffMarketerCount = 0;
+let laidOffMarketerManagerCount = 0;
+let laidOffMarketerManager2Count = 0;
+let laidOffBuyerCount = 0;
+let laidOffBuyerManagerCount = 0;
+let laidOffResoapcherCount = 0;
 let workersbought = 0;
 let philosoaphybought = 0;
 let megamarketingbought = 0;
@@ -159,7 +165,7 @@ function buyResoapcher () {
 function buyMarketerManager () {
     if (money >= 50) {
         marketerManagerCount++;
-        money = money - 50;
+        money = (+money - 50).toFixed(2);
         setInterval(buyMarketer, (5000 / marketerManagerCount));
         document.getElementById("money").innerHTML = "Money = $" + money;
         document.getElementById("marketermanagers").innerHTML = marketerManagerCount + " managers";
@@ -170,10 +176,58 @@ function buyMarketerManager () {
 function buyMarketerManager2 () {
     if (money >= 150) {
         marketerManagerCount2++;
-        money = +money - 150;
+        money = (+money - 150).toFixed(2);
         setInterval(buyMarketerManager, (5000 / marketerManagerCount2));
         document.getElementById("money").innerHTML = "Money = $" + money;
         document.getElementById("marketermanagers2").innerHTML = marketerManagerCount2 + " managers";
+    }
+}
+
+function layoffmarketer () {
+    if (marketerCount >= 1) {
+        marketerCount--;
+        laidOffMarketerCount++;
+        document.getElementById("marketerCount").innerHTML = marketerCount + "(" + laidOffMarketerCount + ")" + " workers";
+    }
+}
+
+function layoffmarketermanager () {
+    if (marketerManagerCount >= 1) {
+        marketerManagerCount--;
+        laidOffMarketerManagerCount++;
+        document.getElementById("marketerManagerCount").innerHTML = marketerManagerCount + "(" + laidOffMarketerManagerCount + ")" + " managers";
+    }
+}
+
+function layoffmarketermanager2 () {
+    if (marketerManagerCount2 >= 1) {
+        marketerManagerCount2--;
+        laidOffMarketerManagerCount2++;
+        document.getElementById("marketerManagerCount2").innerHTML = marketerManagerCoun2 + "(" + laidOffMarketerManagerCount2 + ")" + " managers";
+    }
+}
+
+function layoffbuyer () {
+    if (buyerCount >= 1) {
+        buyerCount--;
+        laidOffBuyerCount++;
+        document.getElementById("buyerCount").innerHTML = buyerCount + "(" + laidOffBuyerCount + ")" + " workers";
+    }
+}
+
+function layoffbuyermanager () {
+    if (buyerManagerCount >= 1) {
+        buyerManagerCount--;
+        laidOffBuyerManagerCount++;
+        document.getElementById("buyerManagerCount").innerHTML = buyerManagerCount + "(" + laidOffBuyerManagerCount + ")" + " managers";
+    }
+}
+
+function layoffresoapcher () {
+    if (resoapcherCount >= 1) {
+        resoapcherCount--;
+        laidOffResoapcherCount++;
+        document.getElementById("resoapchrCount").innerHTML = resoapcherCount + "(" + laidOffResoapcherCount + ")" + " workers";
     }
 }
 
@@ -379,6 +433,13 @@ document.getElementById("buyresoapcher").addEventListener("click", buyResoapcher
 document.getElementById("buymarketermanager").addEventListener("click", buyMarketerManager);
 document.getElementById("buymarketermanager2").addEventListener("click", buyMarketerManager2);
 document.getElementById("buybuyer").addEventListener("click", buyBuyer);
+document.getElementById("buybuyermanager").addEventListener("click", buyBuyerManager);
+document.getElementById("layoffmarketer").addEventListener("click", layoffmarketer);
+document.getElementById("layoffmarketermanager").addEventListener("click", layoffmarketermanager);
+document.getElementById("layoffmarketermanager2").addEventListener("click", layoffmarketermanager2);
+document.getElementById("layoffbuyer").addEventListener("click", layoffbuyer);
+document.getElementById("layoffbuyermanager").addEventListener("click", layoffbuyermanager);
+document.getElementById("layoffresoapcher").addEventListener("click", layoffresoapcher);
 document.getElementById("techbettermarketing1").addEventListener("click", techbettermarketing1);
 document.getElementById("techbettermarketing2").addEventListener("click", techbettermarketing2);
 document.getElementById("techbettermarketing3").addEventListener("click", techbettermarketing3);
