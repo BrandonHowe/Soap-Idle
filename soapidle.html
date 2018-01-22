@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <div class="title">
+        <h1>Soap Idle</h1>
+        <!--<h4>Goal: </h4>-->
+    </div>
+    <div class="buysoap">
+         <button id="getsoap">Buy Soap</button>
+         <p id="soapBuyPrice">Cost: </p>
+    </div>
+    <div class="sellsoap">
+        <button id="sellsoap">Sell Soap</button>
+    <div class="lowerSoapPrice">
+        <button id="lessenSoapPrice">Lessen</button>
+    </div>
+    <div class="raiseSoapPrice">
+        <button id="raiseSoapPrice">Raise</button>
+    </div>
+        <p id="soapSellPrice">Selling for: </p>
+    </div>
+    <div id="workerMenu" class="workerMenu">
+        <table>
+            <tr>
+                <th>Workers</th>
+                <th>Cost</th>
+                <th>Upkeep</th>
+                <th>Amount</th>
+            </tr>
+            <tr>
+                <td><button id="buymarketer">Marketer</button></td>
+                <td>$5</td>
+                <td>No upkeep</td>
+                <td id="marketerCount">0 workers</td>
+            </tr>
+            <tr>
+                <td><button id="buybuyer">Soap Buyer</button></td>
+                <td>$10</td>
+                <td>$1 upkeep</td>
+                <td id="buyerCount">0 workers</td>
+            </tr>
+            <tr id="soapbuyermanager">
+                <td><button id="buybuyermanager">Buyer Manager</button></td>
+                <td>$75</td>
+                <td>$2.5 upkeep</td>
+                <td>0 workers</td>
+            </tr>
+            <tr>
+                <td><button id="buyresoapcher">Resoapcher</button></td>
+                <td>$25</td>
+                <td>$2.5 upkeep</td>
+                <td id="resoapchers">0 workers</td>
+            </tr>
+            <tr id="marketermanagerrow">
+                <td><button id="buymarketermanager">Marketer Manager</button></td>
+                <td>$50</td>
+                <td>No upkeep</td>
+                <td id="marketermanagers">0 managers</td>
+            </tr>
+            <tr id="marketermanager2row">
+                <td><button id="buymarketermanager2">Marketer Manager 2</button></td>
+                <td>$150</td>
+                <td>No upkeep</td>
+                <td id="marketermanagers2">0 managers</td>
+            </tr>
+        </table>
+    </div>
+    <div id="research" class="research1">
+        <button id="resoapch">Resoapch</button>
+        <p id="soapience">0 Soapience.</p>
+    </div>
+    <div id="techMenu" class="techMenu">
+        <table>
+            <tr>
+                <th>Tech</th>
+                <th>Cost</th>
+                <th>Level</th>
+            </tr>
+            <tr id="bettermarketing1row" class="bettermarketing1">
+                <td class="bettermarketing"><button id="techbettermarketing1">Better Marketing</button></td>
+                <td class="bettermarketing">200 Soapience</td>
+                <td class="bettermarketing"> Level 1</td>
+            </tr>
+            <tr id="discount1row" class="discount1row">
+                <td class="discount1"><button id="techdiscount1">Discount</button></td>
+                <td class="discount1">350 Soapience</td>
+                <td class="discount1">Level 1</td>
+            </tr>
+            <tr id="betterresoapch1row" class="betterresoapch1">
+                <td class="betterresoapch"><button id="techbetterresoapch">Better Resoapch</button></td>
+                <td class="betterresoapch">500 Soapience</td>
+                <td class="betterresoapch">Level 1</td>
+            </tr>
+            <tr id="bettermarketing2row" class="bettermarketing2">
+                <td class="bettermarketing"><button id="techbettermarketing2">Better Marketing</button></td>
+                <td class="bettermarketing">750 Soapience</td>
+                <td class="bettermarketing">Level 2</td>
+            </tr>
+            <tr id="discount2row" class="discount2">
+                <td class="discount2"><button id="techdiscount2">Discount</button></td>
+                <td class="discount2">750 Soapience</td>
+                <td class="discount2">Level 2</td>
+            </tr>
+            <tr id="betterresoapch2row" class="betterresoapch2">
+                <td class="betterresoapch"><button id="techbetterresoapch2">Better Resoapch</button></td>
+                <td class="betterresoapch">1500 Soapience</td>
+                <td class="betterresoapch">Level 2</td>
+            </tr>
+            <tr id="bettermarketing3row" class="bettermarketing3">
+                <td class="bettermarketing"><button id="techbettermarketing3">Better Marketing</button></td>
+                <td class="bettermarketing">2000 Soapience</td>
+                <td class="bettermarketing">Level 3</td>
+            </tr>
+            <tr id="philosoaphyrow" class="philosoaphy">
+                <td class="philosoaphy"><button id="techphilosoaphy">Philosoaphy</button></td>
+                <td class="philosoaphy">2000 Soapience</td>
+                <td class="philosoaphy">Level 1</td>
+            </tr>
+            <tr id="workersrow" class="techworkers">
+                <td class="techworkers"><button id="techworkers">Workers</button></td>
+                <td class="techworkers">2500 Soapience</td>
+                <td class="techworkers">Level 1</td>
+            </tr>
+            <tr id="bettermarketing4row" class="bettermarketing4">
+                <td class="bettermarketing"><button id="techbettermarketing4">Better Marketing</button></td>
+                <td class="bettermarketing">4000 Soapience</td>
+                <td class="bettermarketing">Level 4</td>
+            </tr>
+            <tr id="inventionrow" class="invention">
+                <td class="invention"><button id="techinvention">Invention</button></td>
+                <td class="invention">5000 Soapience</td>
+                <td class="invention">Level 1</td>
+            </tr>
+            <tr id="megamarketing1row" class="megamarketing1">
+                <td class="megamarketing1"><button id="techmegamarketing1">Mega Marketing</button></td>
+                <td class="megamarketing1">5000 Soapience</td>
+                <td class="megamarketing1">Level 1</td>
+            </tr>
+            <tr id="qualitysoapbad" class="qualitysoapupgrade">
+                <td class="qualitysoapupgrade"><button id="qualitysoapupgradebad">Quality Upgrade</button></td>
+                <td class="qualitysoapupgrade">7500 Soapience</td>
+                <td class="qualitysoapupgrade">Level 1</td>
+            </tr>
+            <tr id="bettermarketing5row" class="bettermarketing5">
+                <td class="bettermarketing5"><button id="techbettermarketing5">Better Marketing</button></td>
+                <td class="bettermarketing5">8000 Soapience</td>
+                <td class="bettermarketing5">Level 5</td>
+            </tr>
+        </table>
+    </div>
+    <div class="stats">
+        <p id="money"></p>
+        <p id="inventory"></p>
+        <p id="soapQuality"></p>
+    </div>
+    <div id="tutorial1box" class="tutorial1">
+        <p>
+            Let's get started! Click the "Buy Soap" button to buy some soap.
+        </p>
+        <button id="tutorial1">Okay</button>
+    </div>
+    <div id="tutorial2box" class="tutorial2">
+        <p>
+            You need to sell your hard-earned soap! Click the "Sell Soap" button to try and sell someone your soap. It will take a while before someone actually buys your soap. Remember, the higher you price your soap, the more time it takes for you to find someone who is willing to buy it.
+        </p>
+        <button id="tutorial2">Okay</button>
+    </div>
+    <div id="tutorial3box" class="tutorial3">
+        <p>
+            Now keep buying and selling for profit! Remember that you have a limited inventory space, which is 50 soap at the moment. Don't worry, it'll get easier later.
+        </p>
+        <button id="tutorial3">Okay</button>
+    </div>
+    <div id="tutorial4box" class="tutorial4">
+        <p>
+            Wowzers! You've made $5! You can now choose to start buying workers, or start researching technology. Don't worry, the other one that you don't choose unlocks later.
+        </p>
+        <button id="unlockWorkers">Workers</button>
+        <button id="unlockTech">Technology</button>
+    </div>
+    <div id="workertutorial1box" class="workertutorial1">
+        <p>
+            Now you have workers. These are people you can hire for a cost that will help automate things, like buying or selling. Some workers require upkeep but the beginner workers don't. Buying workers can be the biggest help to early-game.
+        </p>
+        <button id="workertutorial1">Okay</button>
+    </div>
+    <div id="techtutorial1box" class="techtutorial1">
+        <p>
+            Now you have tech. These are things that you can unlock using Soapience which will help increase bonuses. Some technologies are one-time techs but others are repeated (they can be bought multiple times)
+        </p>
+        <button id="techtutorial1">Okay</button>
+    </div>
+    <button id="freemoney">Free money</button>
+    <button id="freesoapience">Free soapience</button>
+  </body>
+</html>
