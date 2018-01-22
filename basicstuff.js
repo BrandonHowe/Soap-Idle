@@ -314,7 +314,7 @@ function firemarketer () {
 function firemarketermanager () {
     if (marketerManagerCount >= 1) {
         marketerManagerCount--;
-        if (laidOffMarketerManagerCount >= 1)
+        if (laidOffMarketerManagerCount >= 1) {
             document.getElementById("marketerManagerCount").innerHTML = marketerManagerCount + "(" + laidOffMarketerManagerCount + ")" + " managers";
         } else {
             document.getElementById("marketerManagerCount").innerHTML = marketerManagerCount + " managers";
@@ -325,7 +325,7 @@ function firemarketermanager () {
 function firemarketermanager2 () {
     if (marketerManagerCount2 >= 1) {
         marketerManagerCount2--;
-        if (laidOffMarketerManagerCount2 >= 1)
+        if (laidOffMarketerManagerCount2 >= 1) {
             document.getElementById("marketerManagerCount2").innerHTML = marketerManagerCount2 + "(" + laidOffMarketerManagerCount2 + ")" + " managers";
         } else {
             document.getElementById("marketerManagerCount2").innerHTML = marketerManagerCount2 + " managers";
