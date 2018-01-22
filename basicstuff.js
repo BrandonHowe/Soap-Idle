@@ -41,7 +41,7 @@ function background () {
     if (Math.floor(Math.random * 10000) === 1) {
         document.getElementById("html").style.background = url("https://img.leafcdn.tv/640/clsd/getty/c5b53d6f854944a1bc622843470d51f0");
     } else {
-        document.getElementById("html").style.background = url(https://dreams.metroeve.com/wp-content/uploads/2016/12/dreams.metroeve_soap-dreams-meaning.jpg");
+        document.getElementById("html").style.background = url("https://dreams.metroeve.com/wp-content/uploads/2016/12/dreams.metroeve_soap-dreams-meaning.jpg");
     }
 }
 
