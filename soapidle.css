@@ -1,0 +1,240 @@
+html {
+    background-image: url("http://dreams.metroeve.com/wp-content/uploads/2016/12/dreams.metroeve_soap-dreams-meaning.jpg");
+}
+
+th {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+.title {
+    margin: 10px;
+}
+
+.buysoap {
+    border: 2px solid black;
+    padding-top: 10px;
+    margin: 15px;
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    background-color: #888;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.sellsoap {
+    border: 2px solid black;
+    padding: 10px;
+    width: 125px;
+    margin: 15px;
+    text-align: center;
+    display: inline-block;
+    background-color: #888;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.lowerSoapPrice, .raiseSoapPrice {
+    width: 40px;
+    font-size: 11px;
+    display: inline;
+}
+
+.workerMenu {
+    border: 2px solid black;
+    margin: 15px;
+    border-radius: 5px;
+    background-color: #888;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: none;
+    float: right;
+}
+
+.techMenu {
+    border: 2px solid black;
+    margin: 15px;
+    border-radius: 5px;
+    background-color: #888;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: none;
+    float: right;
+    clear: right;
+}
+
+.research1 {
+    border: 2px solid black;
+    margin: 15px;
+    border-radius: 5px;
+    background-color: #888;
+    width: 125px;
+    padding: 10px;
+    display: none;
+    text-align: center;
+    clear: left;
+}
+
+.bettermarketing {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+.discount1 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+.discount2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+.techworkers {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+.invention {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+.qualitysoapupgrade {
+    background-color: red;
+    -webkit-animation-name: qualityupgrade;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: qualityupgrade;
+    -moz-animation-duration: 10s;
+    -moz-animation-iteration-count: infinite;
+    animation-name: qualityupgrade;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes qualityupgrade {
+    0% {background-color: red;}
+    16% {background-color: orange;}
+    33% {background-color: yellow;}
+    50% {background-color: green;}
+    66% {background-color: blue;}
+    83% {background-color: purple;}
+    100% {background-color: red;}
+}
+
+@-moz-keyframes qualityupgrade {
+    0% {background-color: red;}
+    16% {background-color: orange;}
+    33% {background-color: yellow;}
+    50% {background-color: green;}
+    66% {background-color: blue;}
+    83% {background-color: purple;}
+    100% {background-color: red;}
+}
+
+@keyframes qualityupgrade {
+    0% {background-color: red;}
+    16% {background-color: orange;}
+    33% {background-color: yellow;}
+    50% {background-color: green;}
+    66% {background-color: blue;}
+    83% {background-color: purple;}
+    100% {background-color: red;}
+}
+
+.stats {
+    border: 2px solid black;
+    margin: 15px;
+    border-radius: 5px;
+    background-color: #888;
+    width: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+}
+
+.tutorial1 {
+    border: 2px solid black;
+    background-color: #888;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    display: block;
+}
+
+.tutorial2 {
+    border: 2px solid black;
+    background-color: #888;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    display: none;
+    font-size: 14px;
+}
+
+.tutorial3 {
+    border: 2px solid black;
+    background-color: #888;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    display: none;
+}
+
+.tutorial4 {
+    border: 2px solid black;
+    background-color: #888;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    display: none;
+}
+
+.workertutorial1 {
+    border: 2px solid black;
+    background-color: #888;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    display: none;
+}
+
+.techtutorial1 {
+    border: 2px solid black;
+    background-color: #888;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    display: none;
