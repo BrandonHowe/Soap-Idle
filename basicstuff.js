@@ -42,6 +42,7 @@ document.getElementById("inventionrow").style.display = "none";
 document.getElementById("megamarketing1row").style.display = "none";
 document.getElementById("marketermanagerrow").style.display = "none";
 document.getElementById("marketermanager2row").style.display = "none";
+document.getElementById("soapbuyermanager").style.display = "none";
 
 function background () {
     if (Math.floor(Math.random * 10000) === 1) {
@@ -138,6 +139,7 @@ function buyBuyer () {
         setInterval(buyasoap, (15000 / buyerCount));
         document.getElementById("money").innerHTML = "Money = $" + money;
         document.getElementById("buyerCount").innerHTML = buyerCount + " workers";
+        document.getElementById("soapbuyermanager").style.display = "table-row";
     }
 }
 
