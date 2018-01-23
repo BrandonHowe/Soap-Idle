@@ -284,9 +284,9 @@ function recruitbuyermanager () {
         buyerManagerCount++;
         laidOffBuyerManagerCount--;
         if (laidOffBuyerManagerCount >= 1) {
-            document.getElementById("buyerCount").innerHTML = buyerManagerCount + "(" + laidOffBuyerManagerCount + ")" + " managers";
+            document.getElementById("buyerManagerCount").innerHTML = buyerManagerCount + "(" + laidOffBuyerManagerCount + ")" + " managers";
         } else {
-            document.getElementById("buyerCount").innerHTML = buyerManagerCount + " managers";
+            document.getElementById("buyerManagerCount").innerHTML = buyerManagerCount + " managers";
         }
     }
 }
