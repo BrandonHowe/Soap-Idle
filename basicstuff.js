@@ -158,7 +158,7 @@ function buyResoapcher () {
         techUnlock();
         setInterval(research, (1000 / resoapcherCount));
         document.getElementById("money").innerHTML = "Money = $" + money;
-        document.getElementById("resoapchers").innerHTML = resoapcherCount + " workers";
+        document.getElementById("resoapcherCount").innerHTML = resoapcherCount + " workers";
     } 
 }
 
@@ -168,7 +168,7 @@ function buyMarketerManager () {
         money = (+money - 50).toFixed(2);
         setInterval(buyMarketer, (5000 / marketerManagerCount));
         document.getElementById("money").innerHTML = "Money = $" + money;
-        document.getElementById("marketermanagers").innerHTML = marketerManagerCount + " managers";
+        document.getElementById("marketerManagerCount").innerHTML = marketerManagerCount + " managers";
         document.getElementById("marketermanager2row").style.display = "table-row";
     }
 }
@@ -179,7 +179,7 @@ function buyMarketerManager2 () {
         money = (+money - 150).toFixed(2);
         setInterval(buyMarketerManager, (5000 / marketerManagerCount2));
         document.getElementById("money").innerHTML = "Money = $" + money;
-        document.getElementById("marketermanagers2").innerHTML = marketerManagerCount2 + " managers";
+        document.getElementById("marketerManagerCount2").innerHTML = marketerManagerCount2 + " managers";
     }
 }
 
@@ -227,7 +227,7 @@ function layoffresoapcher () {
     if (resoapcherCount >= 1) {
         resoapcherCount--;
         laidOffResoapcherCount++;
-        document.getElementById("resoapchrCount").innerHTML = resoapcherCount + "(" + laidOffResoapcherCount + ")" + " workers";
+        document.getElementById("resoapcherCount").innerHTML = resoapcherCount + "(" + laidOffResoapcherCount + ")" + " workers";
     }
 }
 
