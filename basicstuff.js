@@ -203,7 +203,7 @@ function layoffmarketermanager2 () {
     if (marketerManagerCount2 >= 1) {
         marketerManagerCount2--;
         laidOffMarketerManagerCount2++;
-        document.getElementById("marketerManagerCount2").innerHTML = marketerManagerCoun2 + "(" + laidOffMarketerManagerCount2 + ")" + " managers";
+        document.getElementById("marketerManagerCount2").innerHTML = marketerManagerCount2 + "(" + laidOffMarketerManagerCount2 + ")" + " managers";
     }
 }
 
