@@ -174,6 +174,54 @@ th {
     display: block;
 }
 
+.savegame {
+    width: 33%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border: 3px solid lime;
+    display: inline-block
+}
+
+.exportfile {
+    width: 34%;
+    position: fixed;
+    bottom: 0;
+    left: 33%;
+    border: 3px solid aqua;
+    display: inline-block;
+}
+
+.importfile {
+    width: 33%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border: 3px solid blue;
+    display: inline-block;
+}
+
+.savebutton {
+    border: 0px;
+    background-color: green;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.exportbutton {
+    border: 0px;
+    background-color: teal;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.importbutton {
+    border: 0px;
+    background-color: navy;
+    padding: 20px;
+    font-size: 15px;
+}
+
 .tutorial1 {
     border: 2px solid black;
     background-color: #888;
