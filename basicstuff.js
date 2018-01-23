@@ -21,7 +21,7 @@ let buyerManagerCount = 0;
 let resoapcherCount = 0;
 let laidOffMarketerCount = 0;
 let laidOffMarketerManagerCount = 0;
-let laidOffMarketerManager2Count = 0;
+let laidOffMarketerManagerCount2 = 0;
 let laidOffBuyerCount = 0;
 let laidOffBuyerManagerCount = 0;
 let laidOffResoapcherCount = 0;
@@ -298,7 +298,7 @@ function recruitresoapcher () {
         if (laidOffResoapcherCount >= 1) {
             document.getElementById("resoapcherCount").innerHTML = resoapcherCount + "(" + laidOffResoapcherCount + ")" + " workers";
         } else {
-            document.getElementById("buyerCount").innerHTML = resoapcherCount + "workers";
+            document.getElementById("resoapcherCount").innerHTML = resoapcherCount + "workers";
         }
     }
 }
