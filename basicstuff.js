@@ -63,7 +63,7 @@ var saveFile = {
     workersbought:workersbought,
     philosoaphybought:philosoaphybought,
     megamarketingbought:megamarketingbought,
-}
+};
 
 document.getElementById("qualitysoapbad").style.display = "none";
 document.getElementById("bettermarketing2row").style.display = "none";
