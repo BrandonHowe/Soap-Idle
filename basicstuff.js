@@ -548,7 +548,6 @@ function qualitySoapBad () {
 
 function saveGame (saveFile) {
     localStorage.setItem(saveKey, JSON.stringify(saveFile));
-    console.log("cookies!");
 }
 
 function loadGameHelper () {
@@ -557,6 +556,7 @@ function loadGameHelper () {
 
 function loadGame () {
     var saveFile = loadGameHelper();
+    console.log("cookies!");
 }
 
 function tutorial1disappear () {
