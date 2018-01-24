@@ -62,7 +62,7 @@ var saveFile = {
     laidOffResoapcherCount:laidOffResoapcherCount,
     workersbought:workersbought,
     philosoaphybought:philosoaphybought,
-    megamarketingbought:megamarketingbought,
+    megamarketingbought:megamarketingbought
 };
 
 document.getElementById("qualitysoapbad").style.display = "none";
