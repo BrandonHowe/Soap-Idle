@@ -25,11 +25,12 @@ let laidOffMarketerManagerCount = 0;
 let laidOffMarketerManagerCount2 = 0;
 let laidOffBuyerCount = 0;
 let laidOffBuyerManagerCount = 0;
+let laidOffBuyerManagerCount2 = 0;
 let laidOffResoapcherCount = 0;
 let workersbought = 0;
 let philosoaphybought = 0;
 let megamarketingbought = 0;
-let saveCodeNumber = money.toString() + soapBuyPrice.toString() + soapSellPrice.toString() + soapSellChance.toString() + buySoapPriceModifier.toString() + soapSellChanceModifier.toString() + soapResoapchModifier.toString() + soapInventory.toString() + soapMaxInventory.toString() + soapQualityNumber.toString() + goalNumber.toString()
+let saveCodeNumber = money.toString() + soapBuyPrice.toString() + soapSellPrice.toString() + soapSellChance.toString() + buySoapPriceModifier.toString() + soapSellChanceModifier.toString() + soapResoapchModifier.toString() + soapInventory.toString() + soapMaxInventory.toString() + soapQualityNumber.toString() + goalNumber.toString() + soapience.toString() + soapienceMultiplier.toString() + tutorial3showing.toString + marketerCount.toString + marketerManagerCount.toString + marketerMAnagerCount2.toString() + buywerCount.toString() + buyerManagerCount.toString() + resoapcherCount.toString + laidOffMarketerCount.toString() + laidoffMarketerManagerCount.toString() + laidOFfMarketerManagerCount2.toString() + laidOffBuyerCount.toString() + laidOffBuyerManagerCount.toString() + laidOffBuyerManagerCount2.toString() + laidOffResoapcherCount.toString() + workersBought.toString() + philosoaphyBought.toString() + megaMarketeringBought.toString;
 
 document.getElementById("qualitysoapbad").style.display = "none";
 document.getElementById("bettermarketing2row").style.display = "none";
