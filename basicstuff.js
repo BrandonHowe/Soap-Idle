@@ -10,6 +10,7 @@ let soapMaxInventory = 50;
 let soapQuality = ["terrible", "bad", "mediocre", "so-so", "good", "amazing", "godly"];
 let goals = ["Reach $15", "eat stew"];
 let soapQualityNumber = 0;
+let goalNumber = 0;
 let soapience = 0;
 let soapienceMultiplier = 1;
 let tutorial3showing = 0;
@@ -28,6 +29,7 @@ let laidOffResoapcherCount = 0;
 let workersbought = 0;
 let philosoaphybought = 0;
 let megamarketingbought = 0;
+let saveCodeNumber = money.toString() + soapBuyPrice.toString() + soapSellPrice.toString() + soapSellChance.toString() + buySoapPriceModifier.toString() + soapSellChanceModifier.toString() + soapResoapchModifier.toString() + soapInventory.toString() + soapMaxInventory.toString() + soapQualityNumber.toString() + goalNumber.toString()
 
 document.getElementById("qualitysoapbad").style.display = "none";
 document.getElementById("bettermarketing2row").style.display = "none";
@@ -609,3 +611,4 @@ document.getElementById("qualitysoapupgradebad").addEventListener("click", quali
 document.getElementById("freemoney").addEventListener("click", freemuns);
 document.getElementById("freesoapience").addEventListener("click", freesoapience);
 document.getElementById("techtutorial1").addEventListener("click", techtutorial1disappear);
+document.getElementById("savebutton").addEventListener("click", getSaveCode);
