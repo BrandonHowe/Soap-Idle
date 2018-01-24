@@ -174,7 +174,7 @@ th {
     display: block;
 }
 
-.savegame {
+/* .savegame {
     width: 33%;
     position: fixed;
     bottom: 0;
@@ -221,6 +221,7 @@ th {
     padding: 20px;
     font-size: 15px;
 }
+*/
 
 .tutorial1 {
     border: 2px solid black;
