@@ -548,6 +548,7 @@ function qualitySoapBad () {
 
 function saveGame (saveFile) {
     localStorage.setItem(saveKey, JSON.stringify(saveFile));
+    console.log("cookies!");
 }
 
 function loadGameHelper () {
