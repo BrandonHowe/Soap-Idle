@@ -30,7 +30,40 @@ let laidOffResoapcherCount = 0;
 let workersbought = 0;
 let philosoaphybought = 0;
 let megamarketingbought = 0;
-let saveCodeNumber = money.toString() + soapBuyPrice.toString() + soapSellPrice.toString() + soapSellChance.toString() + buySoapPriceModifier.toString() + soapSellChanceModifier.toString() + soapResoapchModifier.toString() + soapInventory.toString() + soapMaxInventory.toString() + soapQualityNumber.toString() + goalNumber.toString() + soapience.toString() + soapienceMultiplier.toString() + tutorial3showing.toString + marketerCount.toString + marketerManagerCount.toString + marketerMAnagerCount2.toString() + buywerCount.toString() + buyerManagerCount.toString() + resoapcherCount.toString + laidOffMarketerCount.toString() + laidoffMarketerManagerCount.toString() + laidOFfMarketerManagerCount2.toString() + laidOffBuyerCount.toString() + laidOffBuyerManagerCount.toString() + laidOffBuyerManagerCount2.toString() + laidOffResoapcherCount.toString() + workersBought.toString() + philosoaphyBought.toString() + megaMarketeringBought.toString;
+var saveKey = 'save';
+//let saveCodeNumber = money.toString() + soapBuyPrice.toString() + soapSellPrice.toString() + soapSellChance.toString() + buySoapPriceModifier.toString() + soapSellChanceModifier.toString() + soapResoapchModifier.toString() + soapInventory.toString() + soapMaxInventory.toString() + soapQualityNumber.toString() + goalNumber.toString() + soapience.toString() + soapienceMultiplier.toString() + tutorial3showing.toString + marketerCount.toString + marketerManagerCount.toString + marketerMAnagerCount2.toString() + buywerCount.toString() + buyerManagerCount.toString() + resoapcherCount.toString + laidOffMarketerCount.toString() + laidoffMarketerManagerCount.toString() + laidOFfMarketerManagerCount2.toString() + laidOffBuyerCount.toString() + laidOffBuyerManagerCount.toString() + laidOffBuyerManagerCount2.toString() + laidOffResoapcherCount.toString() + workersBought.toString() + philosoaphyBought.toString() + megaMarketeringBought.toString;
+var saveFile = {
+    money:money,
+    soapBuyPrice:soapBuyPrice,
+    soapSellPrice:soapSellPrice,
+    soapSellChance:soapSellChance,
+    buySoapPriceModifier:buySoapPriceModifier,
+    soapSellChanceModifier:soapSellChanceModifier,
+    soapResoapchModifier:soapResoapchModifier,
+    soapInventory:soapInventory,
+    soapMaxInventory:soapMaxInventory,
+    soapQualityNumber:soapQualityNumber,
+    goalNumber:goalNumber,
+    soapience:soapience,
+    soapienceMultiplier:soapienceMultiplier,
+    tutorial3showing:tutorial3showing,
+    marketerCount:marketerCount,
+    marketerManagerCount:marketerManagerCount,
+    marketerManagerCount2:marketerManagerCount2,
+    buyerCount:buyerCount,
+    buyerManagerCount:buyerManagerCount,
+    resoapcherCount:resoapcherCount,
+    laidOffMarketerCount:laidOffMarketerCount,
+    laidOffMarketerManagerCount:laidOffMarketerManagerCount,
+    laidOffMarketerManagerCount2:laidOffMarketerManagerCount2,
+    laidOffBuyerCount:laidOffBuyerCount,
+    laidOffBuyerManagerCount:laidOffBuyerManagerCount,
+    laidOffBuyerManagerCount2:laidOffBuyerManager2,
+    laidOffResoapcherCount:laidOffResoapcherCount,
+    workersbought:workersbought,
+    philosoaphybought:philosoaphybought,
+    megamarketingbought:megamarketingbought,
+}
 
 document.getElementById("qualitysoapbad").style.display = "none";
 document.getElementById("bettermarketing2row").style.display = "none";
@@ -513,6 +546,43 @@ function qualitySoapBad () {
     }
 }
 
+function saveGame (saveFile) {
+    localStorage.setItem(saveKey, JSON.stringify(saveFile));
+}
+
+function loadGame () {
+    saveFile = JSON.parse(localStorage.getItem(saveKey));
+    money = saveFile.money;
+    soapBuyPrice = saveFile.soapBuyPrice;
+    soapSellPrice = saveFile.soapSellPrice;
+    soapSellChance = saveFile.soapSellChance;
+    buySoapPriceModifier = saveFile.buySoapPriceModifier;
+    sellSoapChanceModifier = saveFile.sellSoapChanceModifier;
+    soapResoapchModifier = saveFile.soapResoapchModifier;
+    soapInventory = saveFile.soapInventory;
+    soapMaxInventory = saveFile.soapMaxInventory;
+    soapQualityNumber = saveFile.soapQualityNumber;
+    goalNumber = saveFile.goalNumber;
+    soapience = saveFile.soapience;
+    soapienceMultiplier = saveFile.soapienceMultiplier;
+    tutorial3showing = saveFile.tutorial3showing;
+    marketerCount = saveFile.marketerCount;
+    marketerManagerCount = saveFile.marketerManagerCount;
+    marketerManagerCount2 = saveFile.marketerManagerCount2;
+    buyerCount = saveFile.buyerCount;
+    buyerManagerCount = saveFile.buyerManagerCount;
+    resoapcherCount = saveFile.resoapcherCount;
+    laidOffMarketerCount = saveFile.laidOffMarketerCount;
+    laidOffMarketerManagerCount = saveFile.laidOffMarketerManagerCount;
+    laidOffMarketerManagerCount2 = saveFile.laidOffMarketerManagerCount2;
+    laidOffBuyerCount = saveFile.laidOffBuyerCount;
+    laidOffBuyerManagerCount = saveFile.laidOffBuyerManagerCount;
+    laidOffResoapcherCount = saveFile.laidOffResoapcherCount;
+    workersbought = saveFile.workersbought;
+    philosoaphybought = saveFile.philosoaphyBought;
+    megamarketingbought = saveFile.megamarketingbought;
+}
+
 function tutorial1disappear () {
     document.getElementById("tutorial1box").style.display = "none";
     document.getElementById("tutorial2box").style.display = "block";
@@ -609,7 +679,8 @@ document.getElementById("techphilosoaphy").addEventListener("click", techphiloso
 document.getElementById("techinvention").addEventListener("click", techinvention);
 document.getElementById("techworkers").addEventListener("click", techworkers);
 document.getElementById("qualitysoapupgradebad").addEventListener("click", qualitySoapBad);
+document.getElementById("savebutton").addEventListener("click", saveGame);
+document.getElementById("importbutton").addEventListener("click", loadGame);
 document.getElementById("freemoney").addEventListener("click", freemuns);
 document.getElementById("freesoapience").addEventListener("click", freesoapience);
 document.getElementById("techtutorial1").addEventListener("click", techtutorial1disappear);
-document.getElementById("savebutton").addEventListener("click", getSaveCode);
