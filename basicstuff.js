@@ -58,7 +58,7 @@ var saveFile = {
     laidOffMarketerManagerCount2:laidOffMarketerManagerCount2,
     laidOffBuyerCount:laidOffBuyerCount,
     laidOffBuyerManagerCount:laidOffBuyerManagerCount,
-    laidOffBuyerManagerCount2:laidOffBuyerManager2,
+    laidOffBuyerManagerCount2:laidOffBuyerManagerCount2,
     laidOffResoapcherCount:laidOffResoapcherCount,
     workersbought:workersbought,
     philosoaphybought:philosoaphybought,
