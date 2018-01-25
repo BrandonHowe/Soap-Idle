@@ -546,9 +546,13 @@ function qualitySoapBad () {
     }
 }
 
-function fidgetspin() {
+function removeFidgetBoxClass () {
+    document.getElementById("fidgetbox").className = "fidgetboxlooks";
+}
+    
+function fidgetspin () {
     document.getElementById("fidgetbox").className = "fidgetbox fidgetboxlooks";
-    document.getElementById("fidgetbox").style.backgroundColor = "red";
+    setTimeout(removeFidgetBoxClass, 500);
 }
 
 /*function saveGame () {
