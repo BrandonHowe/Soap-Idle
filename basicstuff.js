@@ -548,7 +548,7 @@ function qualitySoapBad () {
 
 function fidgetspin() {
     document.getElementById("fidgetbox").className = "fidgetbox fidgetboxlooks";
-    document.getElementById("fidgetbox").style.background-color = "red";
+    document.getElementById("fidgetbox").style.backgroundColor = "red";
 }
 
 /*function saveGame () {
