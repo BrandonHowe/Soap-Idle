@@ -556,7 +556,35 @@ function loadGameHelper () {
 
 function loadGame () {
     var saveFile = loadGameHelper();
-    console.log("cookies!");
+    money = saveFile.money;
+    soapBuyPrice = saveFile.soapBuyPrice;
+    soapSellPrice = saveFile.soapSellPrice;
+    soapSellChance = saveFile.soapSellChance;
+    buySoapPriceModifier = saveFile.buySoapPriceModifier;
+    sellSoapChanceModifier = saveFile.sellSoapChanceModifier;
+    soapResoapchModifier = saveFile.soapResoapchModifier;
+    soapInventory = saveFile.soapInventory;
+    soapMaxInventory = saveFile.soapMaxInventory;
+    soapQualityNumber = saveFile.soapQualityNumber;
+    goalNumber = saveFile.goalNumber;
+    soapience = saveFile.soapience;
+    soapienceMultiplier = saveFile.soapienceMultiplier;
+    tutorial3showing = saveFile.tutorial3showing;
+    marketerCount = saveFile.marketerCount;
+    marketerManagerCount = saveFile.marketerManagerCount;
+    marketerManagerCount2 = saveFile.marketerManagerCount2;
+    buyerCount = saveFile.buyerCount;
+    buyerManagerCount = saveFile.buyerManagerCount;
+    resoapcherCount = saveFile.resoapcherCount;
+    laidOffMarketerCount = saveFile.laidOffMarketerCount;
+    laidOffMarketerManagerCount = saveFile.laidOffMarketerManagerCount;
+    laidOffMarketerManagerCount2 = saveFile.laidOffMarketerManagerCount2;
+    laidOffBuyerCount = saveFile.laidOffBuyerCount;
+    laidOffBuyerManagerCount = saveFile.laidOffBuyerManagerCount;
+    laidOffResoapcherCount = saveFile.laidOffResoapcherCount;
+    workersbought = saveFile.workersbought;
+    philosoaphybought = saveFile.philosoaphyBought;
+    megamarketingbought = saveFile.megamarketingbought;
 }
 
 function tutorial1disappear () {
