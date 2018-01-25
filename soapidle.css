@@ -195,13 +195,13 @@ th {
 }
 
 @keyframes fidgetbox {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
+    from {transform: rotate(0deg); width: 40px; height: 40px;background-color: red; display: inline-block;}
+    to {transform: rotate(360deg); width: 40px; height: 40px;background-color: red; display: inline-block;}
 }
 
 @-webkit-keyframes fidgetbox {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
+    from {transform: rotate(0deg); width: 40px; height: 40px;background-color: red; display: inline-block;}
+    to {transform: rotate(360deg); width: 40px; height: 40px;background-color: red; display: inline-block;}
 }
 
 /* .savegame {
