@@ -547,6 +547,35 @@ function qualitySoapBad () {
 }
 
 function saveGame (saveFile) {
+    saveFile.money = money;
+    saveFile.soapBuyPrice = soapBuyPrice;
+    saveFile.soapSellPrice = soapSellPrice;
+    saveFile.soapSellChance = soapSellChance;
+    saveFile.buySoapPriceModifier = buySoapPriceModifier;
+    saveFile.sellSoapChanceModifier = sellSoapChanceModifier;
+    saveFile.soapResoapchModifier = soapResoapchModifier;
+    saveFile.soapInventory = soapInventory;
+    saveFile.soapMaxInventory = soapMaxInventory;
+    saveFile.soapQualityNumber = soapQualityNumber;
+    saveFile.goalNumber = goalNumber;
+    saveFile.soapience = soapience;
+    saveFile.soapienceMultiplier = soapienceMultiplier;
+    saveFile.tutorial3showing = tutorial3showing;
+    saveFile.marketerCount = marketerCount;
+    saveFile.marketerManagerCount = marketerManagerCount;
+    saveFile.marketerManagerCount2 = marketerManagerCount2;
+    saveFile.buyerCount = buyerCount;
+    saveFile.buyerManagerCount = buyerManagerCount;
+    saveFile.resoapcherCount = resoapcherCount;
+    saveFile.laidOffMarketerCount = laidOffMarketerCount;
+    saveFile.laidOffMarketerManagerCount = laidOffMarketerManagerCount;
+    saveFile.laidOffMarketerManagerCount2 = laidOffMarketerManagerCount2;
+    saveFile.laidOffBuyerCount = laidOffBuyerCount;
+    saveFile.laidOffBuyerManagerCount = laidOffBuyerManagerCount;
+    saveFile.laidOffResoapcherCount = laidOffResoapcherCount;
+    saveFile.workersbought = workersbought;
+    saveFile.philosoaphybought = philosoaphyBought;
+    saveFile.megamarketingbought = megamarketingbought;
     localStorage.setItem(saveKey, JSON.stringify(saveFile));
 }
 
