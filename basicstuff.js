@@ -32,7 +32,7 @@ let philosoaphybought = 0;
 let megamarketingbought = 0;
 var saveKey = 'save';
 //let saveCodeNumber = money.toString() + soapBuyPrice.toString() + soapSellPrice.toString() + soapSellChance.toString() + buySoapPriceModifier.toString() + soapSellChanceModifier.toString() + soapResoapchModifier.toString() + soapInventory.toString() + soapMaxInventory.toString() + soapQualityNumber.toString() + goalNumber.toString() + soapience.toString() + soapienceMultiplier.toString() + tutorial3showing.toString + marketerCount.toString + marketerManagerCount.toString + marketerMAnagerCount2.toString() + buywerCount.toString() + buyerManagerCount.toString() + resoapcherCount.toString + laidOffMarketerCount.toString() + laidoffMarketerManagerCount.toString() + laidOFfMarketerManagerCount2.toString() + laidOffBuyerCount.toString() + laidOffBuyerManagerCount.toString() + laidOffBuyerManagerCount2.toString() + laidOffResoapcherCount.toString() + workersBought.toString() + philosoaphyBought.toString() + megaMarketeringBought.toString;
-var saveFile = {
+/* var saveFile = {
     money:money,
     soapBuyPrice:soapBuyPrice,
     soapSellPrice:soapSellPrice,
@@ -63,7 +63,7 @@ var saveFile = {
     workersbought:workersbought,
     philosoaphybought:philosoaphybought,
     megamarketingbought:megamarketingbought
-};
+}; */
 
 document.getElementById("qualitysoapbad").style.display = "none";
 document.getElementById("bettermarketing2row").style.display = "none";
@@ -546,7 +546,7 @@ function qualitySoapBad () {
     }
 }
 
-function saveGame () {
+/*function saveGame () {
     console.log("cookies!");
     saveFile.money = money;
     saveFile.soapBuyPrice = soapBuyPrice;
@@ -615,7 +615,7 @@ function loadGame () {
     workersbought = Number(saveFile.workersbought);
     philosoaphybought = Number(saveFile.philosoaphybought);
     megamarketingbought = Number(saveFile.megamarketingbought);
-}
+}*/
 
 function tutorial1disappear () {
     document.getElementById("tutorial1box").style.display = "none";
