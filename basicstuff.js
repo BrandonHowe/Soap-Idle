@@ -547,6 +547,7 @@ function qualitySoapBad () {
 }
 
 function saveGame () {
+    console.log("cookies!");
     saveFile.money = money;
     saveFile.soapBuyPrice = soapBuyPrice;
     saveFile.soapSellPrice = soapSellPrice;
