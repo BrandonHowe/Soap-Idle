@@ -174,10 +174,13 @@ th {
     display: block;
 }
 
-.fidgetbox {
+.fidgetboxlooks {
     width: 25px;
     height: 25px;
     background-color: red;
+}
+    
+.fidgetbox {
     animation-name: fidgetbox;
     animation-duration: 0.5s;
     animation-iteration-count: 1;
