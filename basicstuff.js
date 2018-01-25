@@ -546,6 +546,10 @@ function qualitySoapBad () {
     }
 }
 
+function fidgetspin () {
+    document.getElementById("fidgetbox").className = "fidgetbox";
+}
+
 /*function saveGame () {
     console.log("cookies!");
     saveFile.money = money;
