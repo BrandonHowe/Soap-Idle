@@ -705,6 +705,8 @@ function restartGame () {
     document.getElementById("marketermanagerrow").style.display = "none";
     document.getElementById("marketermanager2row").style.display = "none";
     document.getElementById("soapbuyermanager").style.display = "none";
+    document.getElementById("workerMenu").style.display = "none";
+    document.getElementById("techMenu").style.display = "none";
     document.getElementById("money").innerHTML = "Money = $" + money;
     document.getElementById("inventory").innerHTML = soapInventory + "/" + soapMaxInventory + " Inventory";
     document.getElementById("soapQuality").innerHTML = "Quality is " + soapQuality[soapQualityNumber] + ".";
