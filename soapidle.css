@@ -175,10 +175,14 @@ th {
 }
 
 .fidgetboxlooks {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     background-color: red;
     display: inline-block;
+}
+
+.fidgetboxtext {
+    text-align: center;
 }
     
 .fidgetbox {
