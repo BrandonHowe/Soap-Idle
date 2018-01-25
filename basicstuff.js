@@ -30,6 +30,12 @@ let laidOffResoapcherCount = 0;
 let workersbought = 0;
 let philosoaphybought = 0;
 let megamarketingbought = 0;
+let marketerInterval;
+let marketerManagerInterval;
+let marketerManager2Interval;
+let buyerInterval;
+let buyerManagerInterval;
+let resoapcherInterval;
 var saveKey = 'save';
 //let saveCodeNumber = money.toString() + soapBuyPrice.toString() + soapSellPrice.toString() + soapSellChance.toString() + buySoapPriceModifier.toString() + soapSellChanceModifier.toString() + soapResoapchModifier.toString() + soapInventory.toString() + soapMaxInventory.toString() + soapQualityNumber.toString() + goalNumber.toString() + soapience.toString() + soapienceMultiplier.toString() + tutorial3showing.toString + marketerCount.toString + marketerManagerCount.toString + marketerMAnagerCount2.toString() + buywerCount.toString() + buyerManagerCount.toString() + resoapcherCount.toString + laidOffMarketerCount.toString() + laidoffMarketerManagerCount.toString() + laidOFfMarketerManagerCount2.toString() + laidOffBuyerCount.toString() + laidOffBuyerManagerCount.toString() + laidOffBuyerManagerCount2.toString() + laidOffResoapcherCount.toString() + workersBought.toString() + philosoaphyBought.toString() + megaMarketeringBought.toString;
 /* var saveFile = {
@@ -161,7 +167,7 @@ function buyMarketer () {
     if (money >= 5) {
         marketerCount++;
         money = (+money - 5).toFixed(2);
-        setInterval(sellSoapChance, (1000 / marketerCount));
+        marketerInterval = setInterval(sellSoapChance, (1000 / marketerCount));
         document.getElementById("money").innerHTML = "Money = $" + money;
         document.getElementById("marketerCount").innerHTML = marketerCount + " workers";
         document.getElementById("marketermanagerrow").style.display = "table-row"
@@ -172,7 +178,7 @@ function buyBuyer () {
     if (money >= 10) {
         buyerCount++;
         money = (+money - 10).toFixed(2);
-        setInterval(buyasoap, (15000 / buyerCount));
+        buyerInterval = setInterval(buyasoap, (15000 / buyerCount));
         document.getElementById("money").innerHTML = "Money = $" + money;
         document.getElementById("buyerCount").innerHTML = buyerCount + " workers";
         document.getElementById("soapbuyermanager").style.display = "table-row";
@@ -183,7 +189,7 @@ function buyBuyerManager () {
     if (money >= 75) {
         buyerManagerCount++;
         money = (+money - 75).toFixed(2);
-        setInterval(buyBuyer, (5000 / buyerManagerCount));
+        buyerManagerInterval = setInterval(buyBuyer, (5000 / buyerManagerCount));
         document.getElementById("money").innerHTML = "Money = $" + money;
         document.getElementById("buyerManagerCount").innerHTML = buyerManagerCount + " managers";
     }
@@ -194,7 +200,7 @@ function buyResoapcher () {
         resoapcherCount++;
         money = money - 25;
         techUnlock();
-        setInterval(research, (1000 / resoapcherCount));
+        resoapcherInterval = setInterval(research, (1000 / resoapcherCount));
         document.getElementById("money").innerHTML = "Money = $" + money;
         document.getElementById("resoapcherCount").innerHTML = resoapcherCount + " workers";
     } 
@@ -204,7 +210,7 @@ function buyMarketerManager () {
     if (money >= 50) {
         marketerManagerCount++;
         money = (+money - 50).toFixed(2);
-        setInterval(buyMarketer, (5000 / marketerManagerCount));
+        marketerManagerInterval = setInterval(buyMarketer, (5000 / marketerManagerCount));
         document.getElementById("money").innerHTML = "Money = $" + money;
         document.getElementById("marketerManagerCount").innerHTML = marketerManagerCount + " managers";
         document.getElementById("marketermanager2row").style.display = "table-row";
@@ -215,7 +221,7 @@ function buyMarketerManager2 () {
     if (money >= 150) {
         marketerManagerCount2++;
         money = (+money - 150).toFixed(2);
-        setInterval(buyMarketerManager, (5000 / marketerManagerCount2));
+        marketerManagerInterval2 = setInterval(buyMarketerManager, (5000 / marketerManagerCount2));
         document.getElementById("money").innerHTML = "Money = $" + money;
         document.getElementById("marketerManagerCount2").innerHTML = marketerManagerCount2 + " managers";
     }
@@ -225,6 +231,8 @@ function layoffmarketer () {
     if (marketerCount >= 1) {
         marketerCount--;
         laidOffMarketerCount++;
+        clearInterval(marketerInterval);
+        marketerInterval = setInterval(sellSoapChance, (1000 / marketerCount));
         document.getElementById("marketerCount").innerHTML = marketerCount + "(" + laidOffMarketerCount + ")" + " workers";
     }
 }
@@ -233,6 +241,8 @@ function layoffmarketermanager () {
     if (marketerManagerCount >= 1) {
         marketerManagerCount--;
         laidOffMarketerManagerCount++;
+        clearInterval(marketerManagerInterval);
+        marketerManagerInterval = setInterval(buyMarketer, (5000 / marketerManagerCount));
         document.getElementById("marketerManagerCount").innerHTML = marketerManagerCount + "(" + laidOffMarketerManagerCount + ")" + " managers";
     }
 }
@@ -241,6 +251,8 @@ function layoffmarketermanager2 () {
     if (marketerManagerCount2 >= 1) {
         marketerManagerCount2--;
         laidOffMarketerManagerCount2++;
+        clearInterval(marketerManagerInterval2);
+        marketerManagerInterval2 = setInterval(buyMarketerManager, (5000 / marketerManagerCount2));
         document.getElementById("marketerManagerCount2").innerHTML = marketerManagerCount2 + "(" + laidOffMarketerManagerCount2 + ")" + " managers";
     }
 }
@@ -249,6 +261,8 @@ function layoffbuyer () {
     if (buyerCount >= 1) {
         buyerCount--;
         laidOffBuyerCount++;
+        clearInterval(buyerInterval);
+        buyerInterval = setInterval(buyasoap, (5000 / buyerCount));
         document.getElementById("buyerCount").innerHTML = buyerCount + "(" + laidOffBuyerCount + ")" + " workers";
     }
 }
@@ -257,6 +271,8 @@ function layoffbuyermanager () {
     if (buyerManagerCount >= 1) {
         buyerManagerCount--;
         laidOffBuyerManagerCount++;
+        clearInterval(buyerManagerInterval);
+        buyerManagerInterval = setInterval(buyBuyer, (5000 / buyerManagerCount));
         document.getElementById("buyerManagerCount").innerHTML = buyerManagerCount + "(" + laidOffBuyerManagerCount + ")" + " managers";
     }
 }
@@ -265,6 +281,8 @@ function layoffresoapcher () {
     if (resoapcherCount >= 1) {
         resoapcherCount--;
         laidOffResoapcherCount++;
+        clearInterval(resoapcherInterval);
+        resoapcherInterval = setInterval(research, (5000 / resoapcherCount));
         document.getElementById("resoapcherCount").innerHTML = resoapcherCount + "(" + laidOffResoapcherCount + ")" + " workers";
     }
 }
