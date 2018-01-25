@@ -768,8 +768,8 @@ document.getElementById("techphilosoaphy").addEventListener("click", techphiloso
 document.getElementById("techinvention").addEventListener("click", techinvention);
 document.getElementById("techworkers").addEventListener("click", techworkers);
 document.getElementById("qualitysoapupgradebad").addEventListener("click", qualitySoapBad);
-document.getElementById("savebutton").addEventListener("click", saveGame);
-document.getElementById("importbutton").addEventListener("click", loadGame);
+/*document.getElementById("savebutton").addEventListener("click", saveGame);
+document.getElementById("importbutton").addEventListener("click", loadGame);*/
 document.getElementById("freemoney").addEventListener("click", freemuns);
 document.getElementById("freesoapience").addEventListener("click", freesoapience);
 document.getElementById("techtutorial1").addEventListener("click", techtutorial1disappear);
