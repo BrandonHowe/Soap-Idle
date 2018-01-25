@@ -178,6 +178,20 @@ th {
     width: 25px;
     height: 25px;
     background-color: red;
+    animation-name: fidgetbox;
+    animation-duration: 0.5s;
+    -webkit-animation-name: fidgetbox;
+    -webkit-animation-duration: 0.5s;
+}
+
+@keyframes fidgetbox {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@-webkit-keyframes fidgetbox {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
 }
 
 /* .savegame {
