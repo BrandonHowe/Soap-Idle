@@ -552,7 +552,7 @@ function saveGame (saveFile) {
     saveFile.soapSellPrice = soapSellPrice;
     saveFile.soapSellChance = soapSellChance;
     saveFile.buySoapPriceModifier = buySoapPriceModifier;
-    saveFile.sellSoapChanceModifier = sellSoapChanceModifier;
+    saveFile.soapSellChanceModifier = soapSellChanceModifier;
     saveFile.soapResoapchModifier = soapResoapchModifier;
     saveFile.soapInventory = soapInventory;
     saveFile.soapMaxInventory = soapMaxInventory;
@@ -590,7 +590,7 @@ function loadGame () {
     soapSellPrice = Number(saveFile.soapSellPrice);
     soapSellChance = Number(saveFile.soapSellChance);
     buySoapPriceModifier = Number(saveFile.buySoapPriceModifier);
-    sellSoapChanceModifier = Number(saveFile.sellSoapChanceModifier);
+    soapSellChanceModifier = Number(saveFile.soapSellChanceModifier);
     soapResoapchModifier = Number(saveFile.soapResoapchModifier);
     soapInventory = Number(saveFile.soapInventory);
     soapMaxInventory = Number(saveFile.soapMaxInventory);
