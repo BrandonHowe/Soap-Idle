@@ -547,7 +547,7 @@ function qualitySoapBad () {
 }
 
 function fidgetspin () {
-    document.getElementById("fidgetbox").className = "fidgetbox";
+    document.getElementById("fidgetbox").className = "fidgetbox fidgetboxlooks";
 }
 
 /*function saveGame () {
