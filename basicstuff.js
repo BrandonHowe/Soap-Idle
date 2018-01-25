@@ -658,6 +658,61 @@ function freesoapience () {
     document.getElementById("soapience").innerHTML = soapience + " Soapience.";
 }
 
+function restartGame () {
+    money = 10;
+    soapBuyPrice = 1;
+    soapSellPrice = 1;
+    soapSellChance = 0;
+    buySoapPriceModifier = 1;
+    soapSellChanceModifier = 1;
+    soapResoapchModifier = 1;
+    soapInventory = 0;
+    soapMaxInventory = 50;
+    soapQuality = ["terrible", "bad", "mediocre", "so-so", "good", "amazing", "godly"];
+    goals = ["Reach $15", "eat stew"];
+    soapQualityNumber = 0;
+    goalNumber = 0;
+    soapience = 0;
+    soapienceMultiplier = 1;
+    tutorial3showing = 0;
+    marketerCount = 0;
+    marketerManagerCount = 0;
+    marketerManagerCount2 = 0;
+    buyerCount = 0;
+    buyerManagerCount = 0;
+    resoapcherCount = 0;
+    laidOffMarketerCount = 0;
+    laidOffMarketerManagerCount = 0;
+    laidOffMarketerManagerCount2 = 0;
+    laidOffBuyerCount = 0;
+    laidOffBuyerManagerCount = 0;
+    laidOffBuyerManagerCount2 = 0;
+    laidOffResoapcherCount = 0;
+    workersbought = 0;
+    philosoaphybought = 0;
+    megamarketingbought = 0;  
+    document.getElementById("qualitysoapbad").style.display = "none";
+    document.getElementById("bettermarketing2row").style.display = "none";
+    document.getElementById("bettermarketing3row").style.display = "none";
+    document.getElementById("bettermarketing4row").style.display = "none";
+    document.getElementById("bettermarketing5row").style.display = "none";
+    document.getElementById("betterresoapch2row").style.display = "none";
+    document.getElementById("discount2row").style.display = "none";
+    document.getElementById("philosoaphyrow").style.display = "none";
+    document.getElementById("workersrow").style.display = "none";
+    document.getElementById("inventionrow").style.display = "none";
+    document.getElementById("megamarketing1row").style.display = "none";
+    document.getElementById("marketermanagerrow").style.display = "none";
+    document.getElementById("marketermanager2row").style.display = "none";
+    document.getElementById("soapbuyermanager").style.display = "none";
+    document.getElementById("money").innerHTML = "Money = $" + money;
+    document.getElementById("inventory").innerHTML = soapInventory + "/" + soapMaxInventory + " Inventory";
+    document.getElementById("soapQuality").innerHTML = "Quality is " + soapQuality[soapQualityNumber] + ".";
+    document.getElementById("soapBuyPrice").innerHTML = "Cost: $" + soapBuyPrice;
+    document.getElementById("soapSellPrice").innerHTML = "Selling for: $" + soapSellPrice;
+    document.getElementById("soapience").innerHTML = soapience + " Soapience.";
+}
+
 document.getElementById("money").innerHTML = "Money = $" + money;
 document.getElementById("inventory").innerHTML = soapInventory + "/" + soapMaxInventory + " Inventory";
 document.getElementById("soapQuality").innerHTML = "Quality is " + soapQuality[soapQualityNumber] + ".";
@@ -718,3 +773,4 @@ document.getElementById("importbutton").addEventListener("click", loadGame);
 document.getElementById("freemoney").addEventListener("click", freemuns);
 document.getElementById("freesoapience").addEventListener("click", freesoapience);
 document.getElementById("techtutorial1").addEventListener("click", techtutorial1disappear);
+document.getElementById("restart").addEventListener("click", restartGame);
