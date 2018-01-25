@@ -546,7 +546,7 @@ function qualitySoapBad () {
     }
 }
 
-function saveGame (saveFile) {
+function saveGame () {
     saveFile.money = money;
     saveFile.soapBuyPrice = soapBuyPrice;
     saveFile.soapSellPrice = soapSellPrice;
