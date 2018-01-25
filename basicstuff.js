@@ -585,35 +585,35 @@ function loadGameHelper () {
 
 function loadGame () {
     var saveFile = loadGameHelper();
-    money = saveFile.money;
-    soapBuyPrice = saveFile.soapBuyPrice;
-    soapSellPrice = saveFile.soapSellPrice;
-    soapSellChance = saveFile.soapSellChance;
-    buySoapPriceModifier = saveFile.buySoapPriceModifier;
-    sellSoapChanceModifier = saveFile.sellSoapChanceModifier;
-    soapResoapchModifier = saveFile.soapResoapchModifier;
-    soapInventory = saveFile.soapInventory;
-    soapMaxInventory = saveFile.soapMaxInventory;
-    soapQualityNumber = saveFile.soapQualityNumber;
-    goalNumber = saveFile.goalNumber;
-    soapience = saveFile.soapience;
-    soapienceMultiplier = saveFile.soapienceMultiplier;
-    tutorial3showing = saveFile.tutorial3showing;
-    marketerCount = saveFile.marketerCount;
-    marketerManagerCount = saveFile.marketerManagerCount;
-    marketerManagerCount2 = saveFile.marketerManagerCount2;
-    buyerCount = saveFile.buyerCount;
-    buyerManagerCount = saveFile.buyerManagerCount;
-    resoapcherCount = saveFile.resoapcherCount;
-    laidOffMarketerCount = saveFile.laidOffMarketerCount;
-    laidOffMarketerManagerCount = saveFile.laidOffMarketerManagerCount;
-    laidOffMarketerManagerCount2 = saveFile.laidOffMarketerManagerCount2;
-    laidOffBuyerCount = saveFile.laidOffBuyerCount;
-    laidOffBuyerManagerCount = saveFile.laidOffBuyerManagerCount;
-    laidOffResoapcherCount = saveFile.laidOffResoapcherCount;
-    workersbought = saveFile.workersbought;
-    philosoaphybought = saveFile.philosoaphyBought;
-    megamarketingbought = saveFile.megamarketingbought;
+    money = Number(saveFile.money);
+    soapBuyPrice = Number(saveFile.soapBuyPrice);
+    soapSellPrice = Number(saveFile.soapSellPrice);
+    soapSellChance = Number(saveFile.soapSellChance);
+    buySoapPriceModifier = Number(saveFile.buySoapPriceModifier);
+    sellSoapChanceModifier = Number(saveFile.sellSoapChanceModifier);
+    soapResoapchModifier = Number(saveFile.soapResoapchModifier);
+    soapInventory = Number(saveFile.soapInventory);
+    soapMaxInventory = Number(saveFile.soapMaxInventory);
+    soapQualityNumber = Number(saveFile.soapQualityNumber);
+    goalNumber = Number(saveFile.goalNumber);
+    soapience = Number(saveFile.soapience);
+    soapienceMultiplier = Number(saveFile.soapienceMultiplier);
+    tutorial3showing = Number(saveFile.tutorial3showing);
+    marketerCount = Number(saveFile.marketerCount);
+    marketerManagerCount = Number(saveFile.marketerManagerCount);
+    marketerManagerCount2 = Number(saveFile.marketerManagerCount2);
+    buyerCount = Number(saveFile.buyerCount);
+    buyerManagerCount = Number(saveFile.buyerManagerCount);
+    resoapcherCount = Number(saveFile.resoapcherCount);
+    laidOffMarketerCount = Number(saveFile.laidOffMarketerCount);
+    laidOffMarketerManagerCount = Number(saveFile.laidOffMarketerManagerCount);
+    laidOffMarketerManagerCount2 = Number(saveFile.laidOffMarketerManagerCount2);
+    laidOffBuyerCount = Number(saveFile.laidOffBuyerCount);
+    laidOffBuyerManagerCount = Number(saveFile.laidOffBuyerManagerCount);
+    laidOffResoapcherCount = Number(saveFile.laidOffResoapcherCount);
+    workersbought = Number(saveFile.workersbought);
+    philosoaphybought = Number(saveFile.philosoaphyBought);
+    megamarketingbought = Number(saveFile.megamarketingbought);
 }
 
 function tutorial1disappear () {
@@ -644,7 +644,7 @@ function techtutorial1disappear () {
 }
 
 function freemuns () {
-    money = +money + 10;
+    money = Number(money) + 10;
     document.getElementById("money").innerHTML = "Money = $" + money;
     if (money >= 15 && tutorial3showing === 1) {
             tutorial4appear();
