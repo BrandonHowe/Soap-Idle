@@ -180,8 +180,10 @@ th {
     background-color: red;
     animation-name: fidgetbox;
     animation-duration: 0.5s;
+    animation-iteration-count: 1;
     -webkit-animation-name: fidgetbox;
     -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
 }
 
 @keyframes fidgetbox {
