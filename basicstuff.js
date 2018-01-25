@@ -574,7 +574,7 @@ function saveGame (saveFile) {
     saveFile.laidOffBuyerManagerCount = laidOffBuyerManagerCount;
     saveFile.laidOffResoapcherCount = laidOffResoapcherCount;
     saveFile.workersbought = workersbought;
-    saveFile.philosoaphybought = philosoaphyBought;
+    saveFile.philosoaphybought = philosoaphybought;
     saveFile.megamarketingbought = megamarketingbought;
     localStorage.setItem(saveKey, JSON.stringify(saveFile));
 }
@@ -612,7 +612,7 @@ function loadGame () {
     laidOffBuyerManagerCount = Number(saveFile.laidOffBuyerManagerCount);
     laidOffResoapcherCount = Number(saveFile.laidOffResoapcherCount);
     workersbought = Number(saveFile.workersbought);
-    philosoaphybought = Number(saveFile.philosoaphyBought);
+    philosoaphybought = Number(saveFile.philosoaphybought);
     megamarketingbought = Number(saveFile.megamarketingbought);
 }
 
