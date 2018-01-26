@@ -70,6 +70,9 @@ var saveKey = 'save';
     philosoaphybought:philosoaphybought,
     megamarketingbought:megamarketingbought
 }; */
+var suffices = [
+    "K", "M", "B", "T", "Qa", "Qi", "Sx", "Sp", "Oc", "No", "Dc", "Ud", "Dd", "Td", "QaD", "QiD", "SxD", "SpD", "Od", "Nd", "V", "Uv", "Dv", "Tv", "QaV", "QiV", "SxV", "SpV", "Ov", "Nv", "Tr", "Ut", "Dt", "Tt", "QaT", "QiT", "SxT", "SpT", "Ot", "Nt", "Qag", "UQa", "DQa", "TQa", "QaQa", "QiQa", "SxQa", "SpQa", "OQa", "NQa", "Qig", "UQi", "DQi", "TQi", "QaQi", "QiQi", "SxQi", "SpQi", "OQi", "NQi", "Sxg", "USx", "DSx", "TSx", "QaSx", "QiSx", "SxSx", "SpSx", "OSx", "NSx", "Spg", "USp", "DSp", "TSp", "QaSp", "QiSp", "SxSp", "SpSp", "OSp", "NSp", "Ocg", "UOc", "DOc", "TOc", "QaOc", "QiOc", "SxOc", "SpOc", "OOc", "NOc", "Nog", "UNo", "DNo", "TNo", "QaNo", "QiNo", "SxNo", "SpNo", "ONo", "NNo", "C", "Uc", "Dct", "Tc", "QaC". "QiC", "SxC", "SpC", "Oc", "Nc", "Vc", "UVc", "DVc", "TVc", "QaVc", "QiVc", "SxVc", "SpVc", "OVc", "NVc", "QrC"
+]
 
 document.getElementById("qualitysoapbad").style.display = "none";
 document.getElementById("bettermarketing2row").style.display = "none";
@@ -91,6 +94,12 @@ function background () {
         document.getElementById("html").style.background = url("https://img.leafcdn.tv/640/clsd/getty/c5b53d6f854944a1bc622843470d51f0");
     } else {
         document.getElementById("html").style.background = url("https://dreams.metroeve.com/wp-content/uploads/2016/12/dreams.metroeve_soap-dreams-meaning.jpg");
+    }
+}
+
+function abbreviateNumber (number) {
+    if (number > 10000 && number < 1000000) {
+        number = (number / 1000).toFixed(1) + "K";
     }
 }
 
