@@ -77,11 +77,17 @@ document.getElementById("bettermarketing3row").style.display = "none";
 document.getElementById("bettermarketing4row").style.display = "none";
 document.getElementById("bettermarketing5row").style.display = "none";
 document.getElementById("betterresoapch2row").style.display = "none";
+document.getElementById("betterresoapch3row").style.display = "none";
 document.getElementById("discount2row").style.display = "none";
+document.getElementById("discount3row").style.display = "none";
+document.getElementById("discount4row").style.display = "none";
 document.getElementById("philosoaphyrow").style.display = "none";
 document.getElementById("workersrow").style.display = "none";
 document.getElementById("inventionrow").style.display = "none";
+document.getElementById("inventory1row").style.display = "none";
+document.getElementById("inventory2row").style.display = "none";
 document.getElementById("megamarketing1row").style.display = "none";
+document.getElementById("megamarketing2row").style.display = "none";
 document.getElementById("marketermanagerrow").style.display = "none";
 document.getElementById("marketermanager2row").style.display = "none";
 document.getElementById("soapbuyermanager").style.display = "none";
@@ -480,6 +486,17 @@ function techmegamarketing1 () {
         soapience = soapience - 5000;
         megamarketingbought++;
         document.getElementById("megamarketing1row").style.display = "none";
+        document.getElementById("megamarketing2row").style.display = "table-row";
+    }
+    document.getElementById("soapience").innerHTML = soapience + " Soapience.";
+}
+
+function techmegamarketing2 () {
+    if (soapience >= 10000) {
+        sellSoapChanceModifier = 1.5 * soapSellChanceModifier;
+        soapience = soapience - 10000;
+        megamarketingbought++;
+        document.getElementById("megamarketing2row").style.display = "none";
     }
     document.getElementById("soapience").innerHTML = soapience + " Soapience.";
 }
@@ -496,9 +513,9 @@ function techphilosoaphy () {
 }
 
 function techdiscount1 () {
-    if (soapience >= 350) {
+    if (soapience >= 750) {
         buySoapPriceModifier = (0.9 * buySoapPriceModifier).toFixed(2);
-        soapience = soapience - 350;
+        soapience = soapience - 750;
         document.getElementById("discount1row").style.display = "none";
         document.getElementById("discount2row").style.display = "table-row";
         document.getElementById("soapBuyPrice").innerHTML = "Cost: " + buySoapPriceModifier;
@@ -507,10 +524,32 @@ function techdiscount1 () {
 }
 
 function techdiscount2 () {
-    if (soapience >= 750) {
+    if (soapience >= 1500) {
         buySoapPriceModifier = (0.9 * buySoapPriceModifier).toFixed(2);
-        soapience = soapience - 750;
+        soapience = soapience - 1500;
         document.getElementById("discount2row").style.display = "none";
+        document.getElementById("discount3row").style.display = "table-row";
+        document.getElementById("soapBuyPrice").innerHTML = "Cost: " + buySoapPriceModifier;
+    }
+    document.getElementById("soapience").innerHTML = soapience + " Soapience.";
+}
+
+function techdiscount3 () {
+    if (soapience >= 5000) {
+        buySoapPriceModifier = (0.9 * buySoapPriceModifier).toFixed(2);
+        soapience = soapience - 5000;
+        document.getElementById("discount3row").style.display = "none";
+        document.getElementById("discount4row").style.display = "table-row";
+        document.getElementById("soapBuyPrice").innerHTML = "Cost: " + buySoapPriceModifier;
+    }
+    document.getElementById("soapience").innerHTML = soapience + " Soapience.";
+}
+
+function techdiscount4 () {
+    if (soapience >= 10000) {
+        buySoapPriceModifier = (0.9 * buySoapPriceModifier).toFixed(2);
+        soapience = soapience - 10000;
+        document.getElementById("discount4row").style.display = "none";
         document.getElementById("soapBuyPrice").innerHTML = "Cost: " + buySoapPriceModifier;
     }
     document.getElementById("soapience").innerHTML = soapience + " Soapience.";
@@ -535,6 +574,33 @@ function techbetterresoapch2 () {
     document.getElementById("soapience").innerHTML = soapience + " Soapience.";
 }
 
+function techbetterresoapch3 () {
+    if (soapience >= 4500) {
+        soapResoapchModifier = (2 * soapResoapchModifier).toFixed(2);
+        soapience = soapience - 4500;
+        document.getElementById("betterresoapch3row").style.display = "none";
+    }
+    document.getElementById("soapience").innerHTML = soapience + " Soapience.";
+}
+
+function techinventory1
+    if (soapience > 1000) {
+        soapMaxInventory = (2 * soapMaxInventory);
+        soapience = soapience - 1000;
+        document.getElementById("inventory1row").style.display = "none";
+        document.getElementById("inventory2row").style.display = "table-row";
+    }
+    document.getElementById("soapience").innerHTML = soapience + " Soapience.";
+}
+
+function techinventory2 {
+    if (soapience >= 3000) {
+        soapResoapchModifier = (2 * soapMaxInventory);
+        soapience = soapience - 3000;
+        document.getElementById("inventory2row").style.display = "none";
+    }
+    document.getElementById("soapience").innerHTML = soapience + " Soapience.";
+}
 function techworkers () {
     if (soapience >= 2500) {
         soapience = soapience - 2500;
@@ -789,10 +855,16 @@ document.getElementById("techbettermarketing3").addEventListener("click", techbe
 document.getElementById("techbettermarketing4").addEventListener("click", techbettermarketing4);
 document.getElementById("techbettermarketing5").addEventListener("click", techbettermarketing5);
 document.getElementById("techmegamarketing1").addEventListener("click", techmegamarketing1);
+document.getElementById("techmegamarketing2").addEventListener("click", techmegamarketing2);
 document.getElementById("techdiscount1").addEventListener("click", techdiscount1);
 document.getElementById("techdiscount2").addEventListener("click", techdiscount2);
+document.getElementById("techdiscount3").addEventListener("click", techdiscount3);
+document.getElementById("techdiscount4").addEventListener("click", techdiscount4);
+document.getElementById("inventory1").addEventListener("click", techinventory1);
+document.getElementById("inventory2").addEventListener("click", techinventory2);
 document.getElementById("techbetterresoapch").addEventListener("click", techbetterresoapch1);
 document.getElementById("techbetterresoapch2").addEventListener("click", techbetterresoapch2);
+document.getElementById("techbetterresoapch3").addEventListener("click", techbetterresoapch3);
 document.getElementById("techphilosoaphy").addEventListener("click", techphilosoaphy);
 document.getElementById("techinvention").addEventListener("click", techinvention);
 document.getElementById("techworkers").addEventListener("click", techworkers);
