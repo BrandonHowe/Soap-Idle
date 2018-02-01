@@ -583,12 +583,13 @@ function techbetterresoapch3 () {
     document.getElementById("soapience").innerHTML = soapience + " Soapience.";
 }
 
-function techinventory1
+function techinventory1 {
     if (soapience > 1000) {
         soapMaxInventory = (2 * soapMaxInventory);
         soapience = soapience - 1000;
         document.getElementById("inventory1row").style.display = "none";
         document.getElementById("inventory2row").style.display = "table-row";
+        document.getElementById("inventory").innerHTML = soapInventory + "/" + soapMaxInventory;
     }
     document.getElementById("soapience").innerHTML = soapience + " Soapience.";
 }
@@ -598,9 +599,11 @@ function techinventory2 {
         soapResoapchModifier = (2 * soapMaxInventory);
         soapience = soapience - 3000;
         document.getElementById("inventory2row").style.display = "none";
+        document.getElementById("inventory").innerHTML = soapInventory + "/" + soapMaxInventory;
     }
     document.getElementById("soapience").innerHTML = soapience + " Soapience.";
 }
+
 function techworkers () {
     if (soapience >= 2500) {
         soapience = soapience - 2500;
