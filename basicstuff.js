@@ -583,7 +583,7 @@ function techbetterresoapch3 () {
     document.getElementById("soapience").innerHTML = soapience + " Soapience.";
 }
 
-function techinventory1 {
+function techinventory1 () {
     if (soapience > 1000) {
         soapMaxInventory = (2 * soapMaxInventory);
         soapience = soapience - 1000;
@@ -594,7 +594,7 @@ function techinventory1 {
     document.getElementById("soapience").innerHTML = soapience + " Soapience.";
 }
 
-function techinventory2 {
+function techinventory2 () {
     if (soapience >= 3000) {
         soapResoapchModifier = (2 * soapMaxInventory);
         soapience = soapience - 3000;
