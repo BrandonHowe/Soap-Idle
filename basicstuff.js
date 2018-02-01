@@ -863,8 +863,8 @@ document.getElementById("techdiscount1").addEventListener("click", techdiscount1
 document.getElementById("techdiscount2").addEventListener("click", techdiscount2);
 document.getElementById("techdiscount3").addEventListener("click", techdiscount3);
 document.getElementById("techdiscount4").addEventListener("click", techdiscount4);
-document.getElementById("inventory1").addEventListener("click", techinventory1);
-document.getElementById("inventory2").addEventListener("click", techinventory2);
+document.getElementById("techinventory1").addEventListener("click", techinventory1);
+document.getElementById("techinventory2").addEventListener("click", techinventory2);
 document.getElementById("techbetterresoapch").addEventListener("click", techbetterresoapch1);
 document.getElementById("techbetterresoapch2").addEventListener("click", techbetterresoapch2);
 document.getElementById("techbetterresoapch3").addEventListener("click", techbetterresoapch3);
