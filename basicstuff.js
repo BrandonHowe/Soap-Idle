@@ -30,6 +30,9 @@ let laidOffResoapcherCount = 0;
 let workersbought = 0;
 let philosoaphybought = 0;
 let megamarketingbought = 0;
+let opticalAnalyzerUnlocked = 0;
+let opticalAnalyzerCount = 8;
+let opticsModifier = 1;
 let marketerInterval;
 let marketerManagerInterval;
 let marketerManager2Interval;
@@ -640,6 +643,49 @@ function removeFidgetBoxClass () {
 function fidgetspin () {
     document.getElementById("fidgetbox").className = "fidgetbox fidgetboxlooks";
     setTimeout(removeFidgetBoxClass, 500);
+}
+
+function opticsDisappear () {
+    if (opticalAnalyzerCount = 0) {
+        clearInterval(opticsTimer);
+    } else if (opticalAnalyzerCount = 1) {
+        opticalAnalyzerCount--;
+        opticsModifer = 0.33;
+        document.getElementById("opticssquare1").style.display = "none";
+        clearInterval(opticsTimer);
+    } else if (opticalAnalyzerCount = 2) {
+        opticalAnalyzerCount--;
+        opticsModifer = 0.5;
+        document.getElementByID("opticssquare2").style.display = "none";
+    } else if (opticalAnalyzerCount = 3) {
+        opticalAnalyzerCount--;
+        opticsModifer = 0.75;
+        document.getElementByID("opticssquare3").style.display = "none";
+    } else if (opticalAnalyzerCount = 4) {
+        opticalAnalyzerCount--;
+        opticsModifier = 1;
+        document.getElementByID("opticssquare4").style.display = "none";
+    } else if (opticalAnalyzerCount = 5) {
+        opticalAnalyzerCount--;
+        opticsModifier = 1.25;
+        document.getElementByID("opticssquare5").style.display = "none";
+    } else if (opticalAnalyzerCount = 6) {
+        opticalAnalyzerCount--;
+        opticsModifier = 1.5;
+        document.getElementByID("opticssquare6").style.display = "none";
+    } else if (opticalAnalyzerCount = 7) {
+        opticalAnalyzerCount--;
+        opticsModifier = 1.75;
+        document.getElementByID("opticssquare7").style.display = "none";
+    } else if (opticalAnalyzerCount = 8) {
+        opticalAnalyzerCount--;
+        opticsModifier = 2;
+        document.getElementByID("opticssquare8").style.display = "none";
+    }
+}
+
+function opticsDisappearTimer () {
+    var opticsTimer = setInterval(opticsDisappear, 5000);
 }
 
 /*function saveGame () {
