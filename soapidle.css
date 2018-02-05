@@ -204,6 +204,12 @@ th {
     to {transform: rotate(360deg); width: 40px; height: 40px; background-color: red; display: inline-block;}
 }
 
+.opticssquaresbox {
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+}
+
 /* .savegame {
     width: 33%;
     position: fixed;
