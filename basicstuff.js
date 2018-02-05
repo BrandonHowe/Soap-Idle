@@ -627,6 +627,15 @@ function techinvention () {
     }
 }
 
+function techoptics () {
+    if (soapience >= 10000) {
+        soapience = soapience - 10000;
+        document.getElementById("opticsbox").style.display = "table-row";
+        document.getElementById("opticsrow").style.display = "none";
+        document.getElementById("soapience").innerHTML = soapience + " Soapience.";
+    }
+}
+
 function qualitySoapBad () {
     if (soapience >= 7500) {
         soapQualityNumber++;
@@ -682,6 +691,20 @@ function opticsDisappear () {
         opticsModifier = 2;
         document.getElementByID("opticssquare8").style.display = "none";
     }
+}
+
+function opticsAnalyze () {
+    opticalAnalyzerCount = 8;
+    opticsModifier = 2;
+    document.getElementById("opticssquare1").style.display = "table-row";
+    document.getElementById("opticssquare2").style.display = "table-row";
+    document.getElementById("opticssquare3").style.display = "table-row";
+    document.getElementById("opticssquare4").style.display = "table-row";
+    document.getElementById("opticssquare5").style.display = "table-row";
+    document.getElementById("opticssquare6").style.display = "table-row";
+    document.getElementById("opticssquare7").style.display = "table-row";
+    document.getElementById("opticssquare8").style.display = "table-row";
+    opticsDisappearTimer();
 }
 
 function opticsDisappearTimer () {
@@ -917,7 +940,9 @@ document.getElementById("techbetterresoapch3").addEventListener("click", techbet
 document.getElementById("techphilosoaphy").addEventListener("click", techphilosoaphy);
 document.getElementById("techinvention").addEventListener("click", techinvention);
 document.getElementById("techworkers").addEventListener("click", techworkers);
+document.getElementById("techoptics").addEventListener("click", techoptics);
 document.getElementById("qualitysoapupgradebad").addEventListener("click", qualitySoapBad);
+document.getElementById("opticalAnalyzer").addEventListener("click", opticsAnalyze);
 /*document.getElementById("savebutton").addEventListener("click", saveGame);
 document.getElementById("importbutton").addEventListener("click", loadGame);*/
 document.getElementById("freemoney").addEventListener("click", freemuns);
