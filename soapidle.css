@@ -204,10 +204,32 @@ th {
     to {transform: rotate(360deg); width: 40px; height: 40px; background-color: red; display: inline-block;}
 }
 
+.opticsbox {
+    border: 3px solid black;
+    width: 450px;
+}
+
+.opticsboxtitle {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding-left: 10px;
+}
+
 .opticssquaresbox {
     display: flex;
-    margin: 10px;
-    padding: 20px;
+    margin-left: 45px;
+    margin-bottom: 15px;
+    padding: px;
+    border: 3px solid black;
+    width: 350px;
+}
+
+.opticssquares {
+    border: 2px solid blue;
+    background-color: blue;
+    height: 40px;
+    width: 30px;
+    margin: 5px;
 }
 
 /* .savegame {
