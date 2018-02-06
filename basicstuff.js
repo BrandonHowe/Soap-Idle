@@ -708,6 +708,7 @@ function opticsAnalyze () {
 }
 
 function opticsDisappearTimer () {
+    clearInterval(opticsTimer);
     var opticsTimer = setInterval(opticsDisappear, 5000);
 }
 
