@@ -734,6 +734,26 @@ function tutorial4appear () {
 
 function workertutorial1disappear () {
     document.getElementById("workertutorial1box").style.display = "none";
+    document.getElementById("workertutorial2box").style.display = "table-row";
+}
+
+function workertutorial2disappear () {
+    document.getElementById("workertutorial2box").style.display = "none";
+    document.getElementById("workertutorial3box").style.display = "table-row";
+}
+
+function workertutorial3disappear () {
+    document.getElementById("workertutorial3box").style.display = "none";
+    document.getElementById("workertutorial4box").style.display = "table-row";
+}
+
+function workertutorial4disappear () {
+    document.getElementById("workertutorial4box").style.display = "none";
+    document.getElementById("workertutorial5box").style.display = "table-row";
+}
+
+function workertutorial5disappear () {
+    document.getElementById("workertutorial5box").style.display = "none";
 }
 
 function techtutorial1disappear () {
@@ -826,6 +846,10 @@ document.getElementById("tutorial1").addEventListener("click", tutorial1disappea
 document.getElementById("tutorial2").addEventListener("click", tutorial2disappear);
 document.getElementById("tutorial3").addEventListener("click", tutorial3disappear);
 document.getElementById("workertutorial1").addEventListener("click", workertutorial1disappear);
+document.getElementById("workertutorial2").addEventListener("click", workertutorial2disappear);
+document.getElementById("workertutorial3").addEventListener("click", workertutorial3disappear);
+document.getElementById("workertutorial4").addEventListener("click", workertutorial4disappear);
+document.getElementById("workertutorial5").addEventListener("click", workertutorial5disappear);
 document.getElementById("unlockWorkers").addEventListener("click", workersUnlock);
 document.getElementById("unlockTech").addEventListener("click", techUnlock);
 document.getElementById("buymarketer").addEventListener("click", buyMarketer);
