@@ -203,7 +203,12 @@
                 <td class="discount4"><button id="techdiscount4">Discount</button></td>
                 <td class="discount4">10K Soapience</td>
                 <td class="discount4">Level 4</td>
-             </tr>
+            </tr>
+            <tr id="opticsrow" class="opticsrow">
+               <td class="optics"><button id="techoptics">Optics</button></td>
+               <td class="optics">10K Soapience</td>
+               <td class="optics">Level 1</td>
+            </tr>
         </table>
     </div>
     <div class="stats">
@@ -212,6 +217,21 @@
         <p id="soapQuality"></p>
         <div id="fidgetbox" class="fidgetboxlooks" onclick="fidgetspin()"><p id="fidgetboxtext"></p></div>
         <button id="restart">Restart</button>
+    </div>
+    <div id="opticsbox" class="opticsbox">
+        <h2 class="opticsboxtitle">Optical Analyzer</h2>
+        <div id="opticssquares" class="opticssquaresbox">
+            <div id="opticssquare1" class="opticssquares"></div>
+            <div id="opticssquare2" class="opticssquares"></div>
+            <div id="opticssquare3" class="opticssquares"></div>
+            <div id="opticssquare4" class="opticssquares"></div>
+            <div id="opticssquare5" class="opticssquares"></div>
+            <div id="opticssquare6" class="opticssquares"></div>
+            <div id="opticssquare7" class="opticssquares"></div>
+            <div id="opticssquare8" class="opticssquares"></div>
+        </div>
+        <button id="opticsanalyzer">Analyze</button>
+        <button id="opticsanalyzerhelp">Help!</button>
     </div>
     <!--<div id="savegame" class="savegame">
         <button id="savebutton" class="savebutton">Save</button>
@@ -283,6 +303,18 @@
             Now you have tech. These are things that you can unlock using Soapience which will help increase bonuses. Some technologies are one-time techs but others are repeated (they can be bought multiple times). There are also "plot-point" techs, which are techs that advance the game.
         </p>
         <button id="techtutorial1">Okay</button>
+    </div>
+    <div id="opticstutorial1box" class="opticstutorial">
+        <p>
+            Now you have the optical analyzer. Fancy piece of work, but the thing is, nobody really knows how it works. Idea is that the more blue boxes you have, the better your workers do. Thing is, if you have too few or no boxes at all, they work worse.
+        </p>
+        <button id="opticstutorial1">Okay</button>
+    </div>
+    <div id="opticstutorial2box" class="opticstutorial">
+        <p>
+            So what to do with this thing? Well, when the boxes get low, you click the Analyze button to fill them up. Every 5 seconds, a box disappears. 4 boxes is the point where workers start doing less work, so be careful. Good luck!
+        </p>
+        <button id="opticstutorial2">Okay</button>
     </div>
     <button id="freemoney" class="debugbuttons">Free money</button>
     <button id="freesoapience" class="debugbuttons">Free soapience</button>
