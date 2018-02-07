@@ -734,22 +734,22 @@ function tutorial4appear () {
 
 function workertutorial1disappear () {
     document.getElementById("workertutorial1box").style.display = "none";
-    document.getElementById("workertutorial2box").style.display = "table-row";
+    document.getElementById("workertutorial2box").style.display = "block";
 }
 
 function workertutorial2disappear () {
     document.getElementById("workertutorial2box").style.display = "none";
-    document.getElementById("workertutorial3box").style.display = "table-row";
+    document.getElementById("workertutorial3box").style.display = "block";
 }
 
 function workertutorial3disappear () {
     document.getElementById("workertutorial3box").style.display = "none";
-    document.getElementById("workertutorial4box").style.display = "table-row";
+    document.getElementById("workertutorial4box").style.display = "block";
 }
 
 function workertutorial4disappear () {
     document.getElementById("workertutorial4box").style.display = "none";
-    document.getElementById("workertutorial5box").style.display = "table-row";
+    document.getElementById("workertutorial5box").style.display = "block";
 }
 
 function workertutorial5disappear () {
