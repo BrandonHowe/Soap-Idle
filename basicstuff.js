@@ -31,6 +31,7 @@ let laidOffResoapcherCount = 0;
 let workersbought = 0;
 let philosoaphybought = 0;
 let inventionbought = 0;
+let opticsbought = 0;
 let megamarketingbought = 0;
 let opticalAnalyzerUnlocked = 0;
 let opticalAnalyzerCount = 8;
