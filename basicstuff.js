@@ -14,6 +14,7 @@ let goalNumber = 0;
 let soapience = 0;
 let soapienceMultiplier = 1;
 let tutorial3showing = 0;
+let managersUnlocked = 0;
 let marketerCount = 0;
 let marketerManagerCount = 0;
 let marketerManagerCount2 = 0;
@@ -177,6 +178,10 @@ function buyMarketer () {
         document.getElementById("money").innerHTML = "Money = $" + money;
         document.getElementById("marketerCount").innerHTML = marketerCount + " workers";
         document.getElementById("marketermanagerrow").style.display = "table-row"
+        if (managersUnlocked === 0) {
+            document.getElementById("workertutorial5").style.display = "block";
+            managersUnlocked++
+        }
     }
 }
 
@@ -749,7 +754,6 @@ function workertutorial3disappear () {
 
 function workertutorial4disappear () {
     document.getElementById("workertutorial4box").style.display = "none";
-    document.getElementById("workertutorial5box").style.display = "block";
 }
 
 function workertutorial5disappear () {
