@@ -812,6 +812,15 @@ function techtutorial1disappear () {
     document.getElementById("techtutorial1box").style.display = "none";
 }
 
+function opticstutorial1disappear () {
+    document.getElementById("opticstutorial1box").style.display = "none";
+    document.getElementById("opticstutorial2box").style.display = "block";
+}
+
+function opticstutorial2disappear () {
+    document.getElementById("opticstutorial2box").style.display = "none";
+}
+
 function freemuns () {
     money = Number(money) + 10;
     document.getElementById("money").innerHTML = "Money = $" + money;
@@ -897,6 +906,8 @@ document.getElementById("resoapch").addEventListener("click", research)
 document.getElementById("tutorial1").addEventListener("click", tutorial1disappear);
 document.getElementById("tutorial2").addEventListener("click", tutorial2disappear);
 document.getElementById("tutorial3").addEventListener("click", tutorial3disappear);
+document.getElementById("opticstutorial1").addEventListener("click", opticstutorial1disappear);
+document.getElementById("opticstutorial2").addEventListener("click", opticstutorial2disappear);
 document.getElementById("workertutorial1").addEventListener("click", workertutorial1disappear);
 document.getElementById("unlockWorkers").addEventListener("click", workersUnlock);
 document.getElementById("unlockTech").addEventListener("click", techUnlock);
