@@ -39,6 +39,7 @@ let marketerManager2Interval;
 let buyerInterval;
 let buyerManagerInterval;
 let resoapcherInterval;
+let opticsTimer;
 var saveKey = 'save';
 //let saveCodeNumber = money.toString() + soapBuyPrice.toString() + soapSellPrice.toString() + soapSellChance.toString() + buySoapPriceModifier.toString() + soapSellChanceModifier.toString() + soapResoapchModifier.toString() + soapInventory.toString() + soapMaxInventory.toString() + soapQualityNumber.toString() + goalNumber.toString() + soapience.toString() + soapienceMultiplier.toString() + tutorial3showing.toString + marketerCount.toString + marketerManagerCount.toString + marketerMAnagerCount2.toString() + buywerCount.toString() + buyerManagerCount.toString() + resoapcherCount.toString + laidOffMarketerCount.toString() + laidoffMarketerManagerCount.toString() + laidOFfMarketerManagerCount2.toString() + laidOffBuyerCount.toString() + laidOffBuyerManagerCount.toString() + laidOffBuyerManagerCount2.toString() + laidOffResoapcherCount.toString() + workersBought.toString() + philosoaphyBought.toString() + megaMarketeringBought.toString;
 /* var saveFile = {
@@ -176,7 +177,7 @@ function buyMarketer () {
     if (money >= 5) {
         marketerCount++;
         money = (+money - 5).toFixed(2);
-        marketerInterval = setInterval(sellSoapChance, (1000 / marketerCount));
+        marketerInterval = setInterval(sellSoapChance, (1000 / (marketerCount * opticsModifier)));
         document.getElementById("money").innerHTML = "Money = $" + money;
         document.getElementById("marketerCount").innerHTML = marketerCount + " workers";
         document.getElementById("marketermanagerrow").style.display = "table-row"
@@ -187,7 +188,7 @@ function buyBuyer () {
     if (money >= 10) {
         buyerCount++;
         money = (+money - 10).toFixed(2);
-        buyerInterval = setInterval(buyasoap, (15000 / buyerCount));
+        buyerInterval = setInterval(buyasoap, (15000 / (buyerCount * opticsModifier)));
         document.getElementById("money").innerHTML = "Money = $" + money;
         document.getElementById("buyerCount").innerHTML = buyerCount + " workers";
         document.getElementById("soapbuyermanager").style.display = "table-row";
@@ -198,7 +199,7 @@ function buyBuyerManager () {
     if (money >= 75) {
         buyerManagerCount++;
         money = (+money - 75).toFixed(2);
-        buyerManagerInterval = setInterval(buyBuyer, (5000 / buyerManagerCount));
+        buyerManagerInterval = setInterval(buyBuyer, (5000 / (buyerManagerCount * opticsModifier)));
         document.getElementById("money").innerHTML = "Money = $" + money;
         document.getElementById("buyerManagerCount").innerHTML = buyerManagerCount + " managers";
     }
@@ -209,7 +210,7 @@ function buyResoapcher () {
         resoapcherCount++;
         money = money - 25;
         techUnlock();
-        resoapcherInterval = setInterval(research, (1000 / resoapcherCount));
+        resoapcherInterval = setInterval(research, (1000 / (resoapcherCount * opticsModifier)));
         document.getElementById("money").innerHTML = "Money = $" + money;
         document.getElementById("resoapcherCount").innerHTML = resoapcherCount + " workers";
     } 
@@ -219,7 +220,7 @@ function buyMarketerManager () {
     if (money >= 50) {
         marketerManagerCount++;
         money = (+money - 50).toFixed(2);
-        marketerManagerInterval = setInterval(buyMarketer, (5000 / marketerManagerCount));
+        marketerManagerInterval = setInterval(buyMarketer, (5000 / (marketerManagerCount * opticsModifier)));
         document.getElementById("money").innerHTML = "Money = $" + money;
         document.getElementById("marketerManagerCount").innerHTML = marketerManagerCount + " managers";
         document.getElementById("marketermanager2row").style.display = "table-row";
@@ -230,7 +231,7 @@ function buyMarketerManager2 () {
     if (money >= 150) {
         marketerManagerCount2++;
         money = (+money - 150).toFixed(2);
-        marketerManagerInterval2 = setInterval(buyMarketerManager, (5000 / marketerManagerCount2));
+        marketerManagerInterval2 = setInterval(buyMarketerManager, (5000 / (marketerManagerCount2 * opticsModifier)));
         document.getElementById("money").innerHTML = "Money = $" + money;
         document.getElementById("marketerManagerCount2").innerHTML = marketerManagerCount2 + " managers";
     }
@@ -241,7 +242,7 @@ function layoffmarketer () {
         marketerCount--;
         laidOffMarketerCount++;
         clearInterval(marketerInterval);
-        marketerInterval = setInterval(sellSoapChance, (1000 / marketerCount));
+        marketerInterval = setInterval(sellSoapChance, (1000 / (marketerCount * opticsModifier)));
         document.getElementById("marketerCount").innerHTML = marketerCount + "(" + laidOffMarketerCount + ")" + " workers";
     }
 }
@@ -251,7 +252,7 @@ function layoffmarketermanager () {
         marketerManagerCount--;
         laidOffMarketerManagerCount++;
         clearInterval(marketerManagerInterval);
-        marketerManagerInterval = setInterval(buyMarketer, (5000 / marketerManagerCount));
+        marketerManagerInterval = setInterval(buyMarketer, (5000 / (marketerManagerCount * opticsModifier)));
         document.getElementById("marketerManagerCount").innerHTML = marketerManagerCount + "(" + laidOffMarketerManagerCount + ")" + " managers";
     }
 }
@@ -261,7 +262,7 @@ function layoffmarketermanager2 () {
         marketerManagerCount2--;
         laidOffMarketerManagerCount2++;
         clearInterval(marketerManagerInterval2);
-        marketerManagerInterval2 = setInterval(buyMarketerManager, (5000 / marketerManagerCount2));
+        marketerManagerInterval2 = setInterval(buyMarketerManager, (5000 / (marketerManagerCount2 * opticsModifier)));
         document.getElementById("marketerManagerCount2").innerHTML = marketerManagerCount2 + "(" + laidOffMarketerManagerCount2 + ")" + " managers";
     }
 }
@@ -271,7 +272,7 @@ function layoffbuyer () {
         buyerCount--;
         laidOffBuyerCount++;
         clearInterval(buyerInterval);
-        buyerInterval = setInterval(buyasoap, (5000 / buyerCount));
+        buyerInterval = setInterval(buyasoap, (15000 / (buyerCount * opticsModifier)));
         document.getElementById("buyerCount").innerHTML = buyerCount + "(" + laidOffBuyerCount + ")" + " workers";
     }
 }
@@ -291,7 +292,7 @@ function layoffresoapcher () {
         resoapcherCount--;
         laidOffResoapcherCount++;
         clearInterval(resoapcherInterval);
-        resoapcherInterval = setInterval(research, (5000 / resoapcherCount));
+        resoapcherInterval = setInterval(research, (1000 / (resoapcherCount * opticsModifier)));
         document.getElementById("resoapcherCount").innerHTML = resoapcherCount + "(" + laidOffResoapcherCount + ")" + " workers";
     }
 }
@@ -655,47 +656,48 @@ function fidgetspin () {
 }
 
 function opticsDisappear () {
-    if (opticalAnalyzerCount = 0) {
+    if (opticalAnalyzerCount === 0) {
         clearInterval(opticsTimer);
-    } else if (opticalAnalyzerCount = 1) {
+    } else if (opticalAnalyzerCount === 1) {
         opticalAnalyzerCount--;
         opticsModifer = 0.33;
         document.getElementById("opticssquare1").style.display = "none";
         clearInterval(opticsTimer);
-    } else if (opticalAnalyzerCount = 2) {
+    } else if (opticalAnalyzerCount === 2) {
         opticalAnalyzerCount--;
         opticsModifer = 0.5;
-        document.getElementByID("opticssquare2").style.display = "none";
-    } else if (opticalAnalyzerCount = 3) {
+        document.getElementById("opticssquare2").style.display = "none";
+    } else if (opticalAnalyzerCount === 3) {
         opticalAnalyzerCount--;
         opticsModifer = 0.75;
-        document.getElementByID("opticssquare3").style.display = "none";
-    } else if (opticalAnalyzerCount = 4) {
+        document.getElementById("opticssquare3").style.display = "none";
+    } else if (opticalAnalyzerCount === 4) {
         opticalAnalyzerCount--;
         opticsModifier = 1;
-        document.getElementByID("opticssquare4").style.display = "none";
-    } else if (opticalAnalyzerCount = 5) {
+        document.getElementById("opticssquare4").style.display = "none";
+    } else if (opticalAnalyzerCount === 5) {
         opticalAnalyzerCount--;
         opticsModifier = 1.25;
-        document.getElementByID("opticssquare5").style.display = "none";
-    } else if (opticalAnalyzerCount = 6) {
+        document.getElementById("opticssquare5").style.display = "none";
+    } else if (opticalAnalyzerCount === 6) {
         opticalAnalyzerCount--;
         opticsModifier = 1.5;
-        document.getElementByID("opticssquare6").style.display = "none";
-    } else if (opticalAnalyzerCount = 7) {
+        document.getElementById("opticssquare6").style.display = "none";
+    } else if (opticalAnalyzerCount === 7) {
         opticalAnalyzerCount--;
         opticsModifier = 1.75;
-        document.getElementByID("opticssquare7").style.display = "none";
-    } else if (opticalAnalyzerCount = 8) {
+        document.getElementById("opticssquare7").style.display = "none";
+    } else if (opticalAnalyzerCount === 8) {
         opticalAnalyzerCount--;
         opticsModifier = 2;
-        document.getElementByID("opticssquare8").style.display = "none";
+        document.getElementById("opticssquare8").style.display = "none";
     }
 }
 
 function opticsAnalyze () {
     opticalAnalyzerCount = 8;
     opticsModifier = 2;
+    clearInterval(opticsTimer);
     document.getElementById("opticssquare1").style.display = "table-row";
     document.getElementById("opticssquare2").style.display = "table-row";
     document.getElementById("opticssquare3").style.display = "table-row";
@@ -709,7 +711,7 @@ function opticsAnalyze () {
 
 function opticsDisappearTimer () {
     clearInterval(opticsTimer);
-    var opticsTimer = setInterval(opticsDisappear, 5000);
+    opticsTimer = setInterval(opticsDisappear, 5000);
 }
 
 /*function saveGame () {
@@ -943,7 +945,7 @@ document.getElementById("techinvention").addEventListener("click", techinvention
 document.getElementById("techworkers").addEventListener("click", techworkers);
 document.getElementById("techoptics").addEventListener("click", techoptics);
 document.getElementById("qualitysoapupgradebad").addEventListener("click", qualitySoapBad);
-document.getElementById("opticalAnalyzer").addEventListener("click", opticsAnalyze);
+document.getElementById("opticsanalyzer").addEventListener("click", opticsAnalyze);
 /*document.getElementById("savebutton").addEventListener("click", saveGame);
 document.getElementById("importbutton").addEventListener("click", loadGame);*/
 document.getElementById("freemoney").addEventListener("click", freemuns);
