@@ -30,6 +30,7 @@ let laidOffBuyerManagerCount2 = 0;
 let laidOffResoapcherCount = 0;
 let workersbought = 0;
 let philosoaphybought = 0;
+let inventionbought = 0;
 let megamarketingbought = 0;
 let opticalAnalyzerUnlocked = 0;
 let opticalAnalyzerCount = 8;
@@ -93,6 +94,7 @@ document.getElementById("inventory1row").style.display = "none";
 document.getElementById("inventory2row").style.display = "none";
 document.getElementById("megamarketing1row").style.display = "none";
 document.getElementById("megamarketing2row").style.display = "none";
+document.getElementById("opticsrow").style.display = "none";
 document.getElementById("marketermanagerrow").style.display = "none";
 document.getElementById("marketermanager2row").style.display = "none";
 document.getElementById("soapbuyermanager").style.display = "none";
@@ -157,6 +159,9 @@ function research () {
     }
     if (soapience >= 3000 && megamarketingbought === 0) {
         document.getElementById("megamarketing1row").style.display = "table-row";
+    }
+    if (soapience >= 7500 && opticsbought === 0 && inventionbought === 1) {
+        document.getElementById("opticsrow").style.display = "table-row";
     }
 }
 
@@ -627,6 +632,7 @@ function techinvention () {
         soapience = soapience - 5000;
         soapSellChanceModifier = soapSellChanceModifier * 1.25;
         soapResoapchModifier = (soapResoapchModifier * 2).toFixed(2);
+        inventionbought++;
         document.getElementById("soapience").innerHTML = soapience + " Soapience.";
         document.getElementById("inventionrow").style.display = "none";
         document.getElementById("qualitysoapbad").style.display = "table-row";
@@ -636,7 +642,8 @@ function techinvention () {
 function techoptics () {
     if (soapience >= 10000) {
         soapience = soapience - 10000;
-        document.getElementById("opticsbox").style.display = "table-row";
+        opticsbought++;
+        document.getElementById("opticsbox").style.display = "block";
         document.getElementById("opticsrow").style.display = "none";
         document.getElementById("soapience").innerHTML = soapience + " Soapience.";
     }
