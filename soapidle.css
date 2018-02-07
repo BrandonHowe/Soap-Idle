@@ -298,51 +298,7 @@ th {
     display: none;
 }
 
-.workertutorial1 {
-    border: 2px solid black;
-    background-color: #888;
-    border-radius: 5px;
-    padding: 10px;
-    margin: auto;
-    text-align: center;
-    width: 50%;
-    display: none;
-}
-
-.workertutorial2 {
-    border: 2px solid black;
-    background-color: #888;
-    border-radius: 5px;
-    padding: 10px;
-    margin: auto;
-    text-align: center;
-    width: 50%;
-    display: none;
-}
-
-.workertutorial3 {
-    border: 2px solid black;
-    background-color: #888;
-    border-radius: 5px;
-    padding: 10px;
-    margin: auto;
-    text-align: center;
-    width: 50%;
-    display: none;
-}
-
-.workertutorial4 {
-    border: 2px solid black;
-    background-color: #888;
-    border-radius: 5px;
-    padding: 10px;
-    margin: auto;
-    text-align: center;
-    width: 50%;
-    display: none;
-}
-
-.workertutorial5 {
+.workertutorial {
     border: 2px solid black;
     background-color: #888;
     border-radius: 5px;
