@@ -644,8 +644,10 @@ function techoptics () {
     if (soapience >= 10000) {
         soapience = soapience - 10000;
         opticsbought++;
+        opticsDisappearTimer();
         document.getElementById("opticsbox").style.display = "block";
         document.getElementById("opticsrow").style.display = "none";
+        document.getElementById("opticstutorial1").style.display = "none";
         document.getElementById("soapience").innerHTML = soapience + " Soapience.";
     }
 }
