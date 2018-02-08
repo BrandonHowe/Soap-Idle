@@ -733,6 +733,20 @@ function opticsDisappearTimer () {
     opticsTimer = setInterval(opticsDisappear, 5000);
 }
 
+function acceptsam () {
+    document.getElementById("samadvisormodal1").style.display = "none";
+    document.getElementById("samadvisormodal2").style.display = "block";
+}
+
+function rejectsam () {
+    document.getElementById("samadvisormodal1").style.display = "none";
+    document.getElementById("samadvisormodal3").style.display = "block";
+}
+
+function finishsam () {
+    document.getElementById("samadvisormodal").style.display = "none";
+}
+
 /*function saveGame () {
     console.log("cookies!");
     saveFile.money = money;
@@ -1001,6 +1015,10 @@ document.getElementById("qualitysoapupgradebad").addEventListener("click", quali
 document.getElementById("opticsanalyzer").addEventListener("click", opticsAnalyze);
 /*document.getElementById("savebutton").addEventListener("click", saveGame);
 document.getElementById("importbutton").addEventListener("click", loadGame);*/
+document.getElementById("acceptsam").addEventListener("click", acceptsam);
+document.getElementById("rejectsam").addEventListener("click", rejectsam);
+document.getElementById("finishsam").addEventListener("click", finishsam);
+document.getElementById("finishsam2").addEventListener("click", finishsam);
 document.getElementById("freemoney").addEventListener("click", freemuns);
 document.getElementById("freesoapience").addEventListener("click", freesoapience);
 document.getElementById("techtutorial1").addEventListener("click", techtutorial1disappear);
