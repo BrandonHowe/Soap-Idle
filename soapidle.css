@@ -172,7 +172,6 @@ th {
     padding-left: 10px;
     padding-right: 10px;
     display: block;
-    position: relative;
 }
 
 .fidgetboxlooks {
@@ -212,16 +211,12 @@ th {
     background-color: #888;
     border-radius: 5px;
     display: none;
-    position: absolute;
-    left: 10px;
 }
 
 .opticsboxtitle {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     padding-left: 10px;
-    position: absolute;
-    left: 10px;
 }
 
 .opticssquaresbox {
@@ -231,8 +226,6 @@ th {
     border: 2px solid black;
     width: 350px;
     height: 54px;
-    position: absolute;
-    left: 10px;
 }
 
 .opticssquares {
@@ -241,8 +234,6 @@ th {
     height: 40px;
     width: 30px;
     margin: 5px;
-    position: absolute;
-    left: 10px;
 }
 
 /* .savegame {
