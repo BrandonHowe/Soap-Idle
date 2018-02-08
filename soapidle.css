@@ -172,6 +172,7 @@ th {
     padding-left: 10px;
     padding-right: 10px;
     display: block;
+    position: relative;
 }
 
 .fidgetboxlooks {
@@ -211,6 +212,8 @@ th {
     background-color: #888;
     border-radius: 5px;
     display: none;
+    position: absolute;
+    left: 10;
 }
 
 .opticsboxtitle {
