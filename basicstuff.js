@@ -733,6 +733,11 @@ function opticsDisappearTimer () {
     opticsTimer = setInterval(opticsDisappear, 5000);
 }
 
+function startsam () {
+    document.getElementById("samadvisormodal").style.display = "block";
+    document.getElementById("samadvisormodal1").style.display = "block";
+}
+
 function acceptsam () {
     document.getElementById("samadvisormodal1").style.display = "none";
     document.getElementById("samadvisormodal2").style.display = "block";
@@ -746,6 +751,8 @@ function rejectsam () {
 function finishsam () {
     document.getElementById("samadvisormodal").style.display = "none";
 }
+
+setTimeout(startsam, 300000);
 
 /*function saveGame () {
     console.log("cookies!");
