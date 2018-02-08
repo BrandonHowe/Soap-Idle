@@ -171,7 +171,9 @@ th {
     width: 150px;
     padding-left: 10px;
     padding-right: 10px;
-    display: block;
+    display: inline-block;
+    float: left;
+    clear: left;
 }
 
 .fidgetboxlooks {
