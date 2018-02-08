@@ -143,7 +143,10 @@ function lessenSoapPrice() {
 }
 
 function sellSoapChance() {
-    let soapSellChance = ((soapSellPrice - soapBuyPrice) * 100) / soapSellChanceModifier;
+    if (soapSellPrice > 1) {
+        soapSellChance = ((soapSellPrice - 1) * 100) / soapSellChanceModifier;
+    } else {
+        soapSellChance = 1;
     if (Math.floor((Math.random() * soapSellChance) + 1) === 1) {
         sellasoap();
     }
