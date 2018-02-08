@@ -147,6 +147,7 @@ function sellSoapChance() {
         soapSellChance = ((soapSellPrice - 1) * 100) / soapSellChanceModifier;
     } else {
         soapSellChance = 1;
+    }
     if (Math.floor((Math.random() * soapSellChance) + 1) === 1) {
         sellasoap();
     }
