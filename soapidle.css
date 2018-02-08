@@ -206,19 +206,19 @@ th {
 }
 
 .opticsbox {
-    border: 3px solid black;
+    border: 2px solid black;
     width: 450px;
     margin: 10px;
     background-color: #888;
     border-radius: 5px;
     display: none;
     position: absolute;
-    left: 10;
+    left: 10px;
 }
 
 .opticsboxtitle {
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
     padding-left: 10px;
 }
 
