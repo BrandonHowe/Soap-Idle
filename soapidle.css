@@ -248,33 +248,36 @@ th {
     height: 100%;
     overflow: auto;
     background-color: (0,0,0);
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.8);
 }
 
 .samadvisormodalstart {
     display: none;
-    background-color: #fefefe;
+    background-color: #888;
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 2px solid #888;
+    border-radius: 5px;
     width: 80%;
 }
 
 .samadvisormodalaccept {
     display: none;
-    background-color: #fefefe;
+    background-color: #888;
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 2px solid #888;
+    border-radius: 5px;
     width: 80%;
 }
 
 .samadvisormodalreject {
     display: none;
-    background-color: #fefefe;
+    background-color: #888;
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 2px solid #888;
+    border-radius: 5px;
     width: 80%;
 }
 
