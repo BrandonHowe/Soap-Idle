@@ -36,6 +36,7 @@ let megamarketingbought = 0;
 let opticalAnalyzerUnlocked = 0;
 let opticalAnalyzerCount = 8;
 let opticsModifier = 1;
+let titles = ["Yo, ", "Boss, ", "Sire, ", "Lord, ", "Noble Leader, ", "Heveanly Superperson, "];
 let marketerInterval;
 let marketerManagerInterval;
 let marketerManager2Interval;
