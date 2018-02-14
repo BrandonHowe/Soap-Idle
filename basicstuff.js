@@ -43,10 +43,10 @@ let samadvice = ["I think we should try and get to $15. We could start hiring wo
                  "perhaps our best course of action is to learn the ways of upgrades. A resoapcher would be helpful.", 
                  "we need to increase the speed of which we distribute! A marketer manager would be a good idea to buy.",
                  "buying is good but we need more of it! Let us buy a buyer manager!",
-                 "let us distribute to the masses! Marketer manager managers is the only way to the top!"
-                 "we need more soap! By getting a buyer manager manager, we will be rich, rich, rich!"
-                 "we need to train our marketers to work better. Let us resoapch Better Marketing!"
-                 "the current marketing practices are terrible! We need Mega Marketing!"
+                 "let us distribute to the masses! Marketer manager managers is the only way to the top!", 
+                 "we need more soap! By getting a buyer manager manager, we will be rich, rich, rich!", 
+                 "we need to train our marketers to work better. Let us resoapch Better Marketing!", 
+                 "the current marketing practices are terrible! We need Mega Marketing!", 
                  "these current dealers are giving us a terrible deal! We need to resoapch how to get a Discount!"]
 let marketerInterval;
 let marketerManagerInterval;
