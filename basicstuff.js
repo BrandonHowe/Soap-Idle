@@ -268,8 +268,13 @@ function layoffmarketer () {
     if (marketerCount >= 1) {
         marketerCount--;
         laidOffMarketerCount++;
-        clearInterval(marketerInterval);
-        marketerInterval = setInterval(sellSoapChance, (1000 / (marketerCount * opticsModifier)));
+        if (marketerCount >= 1) {
+          clearInterval(marketerInterval);
+          marketerInterval = setInterval(sellSoapChance, (1000 / (marketerCount * opticsModifier)));
+        }
+        if (marketerCount === 0) {
+          clearInterval(marketerInterval)
+        }
         document.getElementById("marketerCount").innerHTML = marketerCount + "(" + laidOffMarketerCount + ")" + " workers";
     }
 }
@@ -278,8 +283,13 @@ function layoffmarketermanager () {
     if (marketerManagerCount >= 1) {
         marketerManagerCount--;
         laidOffMarketerManagerCount++;
-        clearInterval(marketerManagerInterval);
-        marketerManagerInterval = setInterval(buyMarketer, (5000 / (marketerManagerCount * opticsModifier)));
+        if (marketerManagerCount >= 1) { 
+          clearInterval(marketerManagerInterval);
+          marketerManagerInterval = setInterval(buyMarketer, (5000 / (marketerManagerCount * opticsModifier)));
+        }
+        if (marketerManagerCount === 0) {
+          clearInterval(marketerManagerInterval);
+        }
         document.getElementById("marketerManagerCount").innerHTML = marketerManagerCount + "(" + laidOffMarketerManagerCount + ")" + " managers";
     }
 }
@@ -288,8 +298,13 @@ function layoffmarketermanager2 () {
     if (marketerManagerCount2 >= 1) {
         marketerManagerCount2--;
         laidOffMarketerManagerCount2++;
-        clearInterval(marketerManagerInterval2);
-        marketerManagerInterval2 = setInterval(buyMarketerManager, (5000 / (marketerManagerCount2 * opticsModifier)));
+        if (marketerManagerCount2 >= 1) { 
+          clearInterval(marketerManagerInterval2);
+          marketerManagerInterval2 = setInterval(buyMarketerManager, (5000 / (marketerManagerCount2 * opticsModifier)));
+        }
+        if (marketerManagerCount2 === 0) {
+          clearInterval(marketerManagerInterval2);
+        }
         document.getElementById("marketerManagerCount2").innerHTML = marketerManagerCount2 + "(" + laidOffMarketerManagerCount2 + ")" + " managers";
     }
 }
@@ -298,8 +313,13 @@ function layoffbuyer () {
     if (buyerCount >= 1) {
         buyerCount--;
         laidOffBuyerCount++;
-        clearInterval(buyerInterval);
-        buyerInterval = setInterval(buyasoap, (15000 / (buyerCount * opticsModifier)));
+        if (buyerCount >= 1) {
+          clearInterval(buyerInterval);
+          buyerInterval = setInterval(buyasoap, (15000 / (buyerCount * opticsModifier)));
+        }
+        if (buyerCount === 0) {
+          clearInterval(buyerInterval);
+        }
         document.getElementById("buyerCount").innerHTML = buyerCount + "(" + laidOffBuyerCount + ")" + " workers";
     }
 }
@@ -308,8 +328,13 @@ function layoffbuyermanager () {
     if (buyerManagerCount >= 1) {
         buyerManagerCount--;
         laidOffBuyerManagerCount++;
-        clearInterval(buyerManagerInterval);
-        buyerManagerInterval = setInterval(buyBuyer, (5000 / buyerManagerCount));
+        if (buyerManagerCount >= 1) {
+          clearInterval(buyerManagerInterval);
+          buyerManagerInterval = setInterval(buyBuyer, (5000 / buyerManagerCount));
+        }
+        if (buyerManagerCount === 0) {
+          clearInterval(buyerManagerInterval);
+        }
         document.getElementById("buyerManagerCount").innerHTML = buyerManagerCount + "(" + laidOffBuyerManagerCount + ")" + " managers";
     }
 }
@@ -318,8 +343,13 @@ function layoffresoapcher () {
     if (resoapcherCount >= 1) {
         resoapcherCount--;
         laidOffResoapcherCount++;
-        clearInterval(resoapcherInterval);
-        resoapcherInterval = setInterval(research, (1000 / (resoapcherCount * opticsModifier)));
+        if (resoapcherCount >= 1) {
+          clearInterval(resoapcherInterval);
+          resoapcherInterval = setInterval(research, (1000 / (resoapcherCount * opticsModifier)));
+        }
+        if (resoapcherCount === 0) {
+          clearInterval(resoapcherInterval);
+        }
         document.getElementById("resoapcherCount").innerHTML = resoapcherCount + "(" + laidOffResoapcherCount + ")" + " workers";
     }
 }
@@ -391,7 +421,7 @@ function recruitresoapcher () {
         if (laidOffResoapcherCount >= 1) {
             document.getElementById("resoapcherCount").innerHTML = resoapcherCount + "(" + laidOffResoapcherCount + ")" + " workers";
         } else {
-            document.getElementById("resoapcherCount").innerHTML = resoapcherCount + "workers";
+            document.getElementById("resoapcherCount").innerHTML = resoapcherCount + " workers";
         }
     }
 }
