@@ -49,7 +49,8 @@ let samadvice = ["I think we should try and get to $15. We could start hiring wo
                  "we need more soap! By getting a buyer manager manager, we will be rich, rich, rich!", 
                  "we need to train our marketers to work better. Let us resoapch Better Marketing!", 
                  "the current marketing practices are terrible! We need Mega Marketing!", 
-                 "these current dealers are giving us a terrible deal! We need to resoapch how to get a Discount!"]
+                 "these current dealers are giving us a terrible deal! We need to resoapch how to get a Discount!"];
+let sellerInterval;
 let marketerInterval;
 let marketerManagerInterval;
 let marketerManager2Interval;
@@ -189,14 +190,14 @@ function calcChance () {
 
 function sellingLoop () {
 	sellSoapChance();
-	setTimeout(sellingLoop, sellingEff);
+	sellerInterval = setTimeout(sellingLoop, sellingEff);
 }
 
 function stopSelling () {
 	document.getElementById("sellingmenubackground").style.display = "none";
 	document.getElementById("sellingmenuarea").style.display = "none";
-	sellingEff = 0;
 	sellingEffArchive = sellingEff;
+	clearInterval(sellerInterval);
 }
 
 function research () {
