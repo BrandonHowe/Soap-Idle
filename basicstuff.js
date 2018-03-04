@@ -165,6 +165,45 @@ function sellSoapChance() {
     }
 }
 
+function startSelling () {
+	document.getElementById("sellingmenubackground").style.display = "block";
+	document.getElementById("sellingmenuarea").style.display = "block";
+	document.getElementById("sellchance").innerHTML = "Chance of success: " + (100 / soapSellChance).toFixed(1) + "%";
+	document.getElementById("sellprice").innerHTML = "Selling for: $" + soapSellPrice.toFixed(2);
+	setTimeout(sellingLoop, 500);
+}
+
+function lowerSoapPrice () {
+	soapSellPrice = soapSellPrice - 0.05;
+	document.getElementById("sellprice").innerHTML = "Selling for: $" + soapSellPrice.toFixed(2);
+	calcChance();
+}
+
+function raiseSoapPrice () {
+	soapSellPrice = soapSellPrice + 0.05;
+	document.getElementById("sellprice").innerHTML = "Selling for: $" + soapSellPrice.toFixed(2);
+	calcChance();
+}
+
+function calcChance () {
+	if (soapSellPrice > 1) {
+        soapSellChance = ((soapSellPrice - 1) * 100);
+    } else {
+        soapSellChance = 1;
+    }
+	document.getElementById("sellchance").innerHTML = "Chance of success: " + (100 / soapSellChance).toFixed(1) + "%";
+}
+
+function sellingLoop () {
+	sellSoapChance();
+	setTimeout(sellingLoop, 1000);
+}
+
+function stopSelling () {
+	document.getElementById("sellingmenubackground").style.display = "none";
+	document.getElementById("sellingmenuarea").style.display = "none";
+}
+
 function research () {
     soapience = (+soapience + +soapResoapchModifier).toFixed(1);
     document.getElementById("soapience").innerHTML = soapience + " Soapience.";
@@ -998,11 +1037,16 @@ document.getElementById("inventory").innerHTML = soapInventory + "/" + soapMaxIn
 document.getElementById("soapQuality").innerHTML = "Quality is " + soapQuality[soapQualityNumber] + ".";
 document.getElementById("soapBuyPrice").innerHTML = "Cost: $" + soapBuyPrice;
 document.getElementById("soapSellPrice").innerHTML = "Selling for: $" + soapSellPrice;
+document.getElementById("sellprice").innerHTML = "Selling for: $" + soapSellPrice;
 document.getElementById("soapience").innerHTML = soapience + " Soapience.";
 document.getElementById("getsoap").addEventListener("click", buyasoap);
 document.getElementById("sellsoap").addEventListener("click", sellSoapChance);
 document.getElementById("raiseSoapPrice").addEventListener("click", raiseSoapPrice);
 document.getElementById("lessenSoapPrice").addEventListener("click", lessenSoapPrice);
+document.getElementById("opensellingmenu").addEventListener("click", startSelling);
+document.getElementById("lowerSoapPriceOnMenu").addEventListener("click", lowerSoapPrice);
+document.getElementById("raiseSoapPriceOnMenu").addEventListener("click", raiseSoapPrice);
+document.getElementById("stopselling").addEventListener("click", stopSelling);
 document.getElementById("resoapch").addEventListener("click", research)
 document.getElementById("tutorial1").addEventListener("click", tutorial1disappear);
 document.getElementById("tutorial2").addEventListener("click", tutorial2disappear);
