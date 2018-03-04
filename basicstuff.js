@@ -168,7 +168,9 @@ function sellSoapChance() {
 function startSelling () {
 	document.getElementById("sellingmenubackground").style.display = "block";
 	document.getElementById("sellingmenuarea").style.display = "block";
-	setTimeout(sellingLoop, 5000);
+	document.getElementById("sellchance").innerHTML = "Chance of success: " + (100 / soapSellChance).toFixed(1) + "%";
+	document.getElementById("sellprice").innerHTML = "Selling for: $" + soapSellPrice.toFixed(2);
+	setTimeout(sellingLoop, 500);
 }
 
 function lowerSoapPrice () {
