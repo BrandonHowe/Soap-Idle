@@ -144,18 +144,6 @@ function sellasoap() {
     }
 }
 
-function raiseSoapPrice() {
-    soapSellPrice = soapSellPrice + 0.25;
-    document.getElementById("soapSellPrice").innerHTML = "Selling for: $" + soapSellPrice;
-}
-
-function lessenSoapPrice() {
-    if (soapSellPrice > 0.25) {
-        soapSellPrice = soapSellPrice - 0.25;
-        document.getElementById("soapSellPrice").innerHTML = "Selling for: $" + soapSellPrice;
-    }
-}
-
 function sellSoapChance() {
     if (soapSellPrice > 1) {
         soapSellChance = ((soapSellPrice - 1) * 100) / soapSellChanceModifier;
@@ -179,14 +167,14 @@ function startSelling () {
 function lowerSoapPrice () {
 	soapSellPrice = soapSellPrice - 0.05;
 	document.getElementById("sellprice").innerHTML = "Selling for: $" + soapSellPrice.toFixed(2);
-	document.getElementById("soapSellprice").innerHTML = "Selling for: $" + soapSellPrice.toFixed(2);
+	document.getElementById("soapSellPrice").innerHTML = "Selling for: $" + soapSellPrice.toFixed(2);
 	calcChance();
 }
 
 function raiseSoapPrice () {
 	soapSellPrice = soapSellPrice + 0.05;
 	document.getElementById("sellprice").innerHTML = "Selling for: $" + soapSellPrice.toFixed(2);
-	document.getElementById("soapSellprice").innerHTML = "Selling for: $" + soapSellPrice.toFixed(2);
+	document.getElementById("soapSellPrice").innerHTML = "Selling for: $" + soapSellPrice.toFixed(2);
 	calcChance();
 }
 
