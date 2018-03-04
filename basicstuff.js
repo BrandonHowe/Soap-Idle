@@ -8,6 +8,8 @@ let soapResoapchModifier = 1;
 let soapInventory = 0;
 let soapMaxInventory = 50;
 let soapQuality = ["terrible", "bad", "mediocre", "so-so", "good", "amazing", "godly"];
+let sellingEff = 1000;
+let sellingEffArchive = 1000;
 let goals = ["Reach $15", "eat stew"];
 let soapQualityNumber = 0;
 let goalNumber = 0;
@@ -170,18 +172,21 @@ function startSelling () {
 	document.getElementById("sellingmenuarea").style.display = "block";
 	document.getElementById("sellchance").innerHTML = "Chance of success: " + (100 / soapSellChance).toFixed(1) + "%";
 	document.getElementById("sellprice").innerHTML = "Selling for: $" + soapSellPrice.toFixed(2);
+	sellingEff = sellingEffArchive;
 	setTimeout(sellingLoop, 500);
 }
 
 function lowerSoapPrice () {
 	soapSellPrice = soapSellPrice - 0.05;
 	document.getElementById("sellprice").innerHTML = "Selling for: $" + soapSellPrice.toFixed(2);
+	document.getElementById("soapSellprice").innerHTML = "Selling for: $" + soapSellPrice.toFixed(2);
 	calcChance();
 }
 
 function raiseSoapPrice () {
 	soapSellPrice = soapSellPrice + 0.05;
 	document.getElementById("sellprice").innerHTML = "Selling for: $" + soapSellPrice.toFixed(2);
+	document.getElementById("soapSellprice").innerHTML = "Selling for: $" + soapSellPrice.toFixed(2);
 	calcChance();
 }
 
@@ -196,12 +201,14 @@ function calcChance () {
 
 function sellingLoop () {
 	sellSoapChance();
-	setTimeout(sellingLoop, 1000);
+	setTimeout(sellingLoop, sellingEff);
 }
 
 function stopSelling () {
 	document.getElementById("sellingmenubackground").style.display = "none";
 	document.getElementById("sellingmenuarea").style.display = "none";
+	sellingEff = 0;
+	sellingEffArchive = sellingEff;
 }
 
 function research () {
