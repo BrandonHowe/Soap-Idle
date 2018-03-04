@@ -1040,7 +1040,7 @@ document.getElementById("soapSellPrice").innerHTML = "Selling for: $" + soapSell
 document.getElementById("sellprice").innerHTML = "Selling for: $" + soapSellPrice;
 document.getElementById("soapience").innerHTML = soapience + " Soapience.";
 document.getElementById("getsoap").addEventListener("click", buyasoap);
-document.getElementById("sellsoap").addEventListener("click", sellSoapChance);
+//document.getElementById("sellsoap").addEventListener("click", sellSoapChance);
 document.getElementById("raiseSoapPrice").addEventListener("click", raiseSoapPrice);
 document.getElementById("lessenSoapPrice").addEventListener("click", lessenSoapPrice);
 document.getElementById("opensellingmenu").addEventListener("click", startSelling);
