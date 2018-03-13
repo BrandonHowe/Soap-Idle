@@ -969,12 +969,6 @@ document.getElementById("sellprice").innerHTML = "Selling for: $" + soapSellPric
 document.getElementById("soapience").innerHTML = soapience + " Soapience.";
 document.getElementById("getsoap").addEventListener("click", buyasoap);
 //document.getElementById("sellsoap").addEventListener("click", sellSoapChance);
-document.getElementById("raiseSoapPrice").addEventListener("click", raiseSoapPrice);
-document.getElementById("lessenSoapPrice").addEventListener("click", lessenSoapPrice);
-document.getElementById("opensellingmenu").addEventListener("click", startSelling);
-document.getElementById("lowerSoapPriceOnMenu").addEventListener("click", lowerSoapPrice);
-document.getElementById("raiseSoapPriceOnMenu").addEventListener("click", raiseSoapPrice);
-document.getElementById("stopselling").addEventListener("click", stopSelling);
 document.getElementById("resoapch").addEventListener("click", research)
 document.getElementById("tutorial1").addEventListener("click", tutorial1disappear);
 document.getElementById("tutorial2").addEventListener("click", tutorial2disappear);
