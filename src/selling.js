@@ -65,3 +65,10 @@ function stopSelling () {
 	sellingEffArchive = sellingEff;
 	clearInterval(sellerInterval);
 }
+
+document.getElementById("raiseSoapPrice").addEventListener("click", raiseSoapPrice);
+document.getElementById("lessenSoapPrice").addEventListener("click", lessenSoapPrice);
+document.getElementById("opensellingmenu").addEventListener("click", startSelling);
+document.getElementById("lowerSoapPriceOnMenu").addEventListener("click", lowerSoapPrice);
+document.getElementById("raiseSoapPriceOnMenu").addEventListener("click", raiseSoapPrice);
+document.getElementById("stopselling").addEventListener("click", stopSelling);
