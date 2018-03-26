@@ -1,51 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="description" content="Soap Game">
-    <meta name="author" content="xWafl">
-    <link rel="stylesheet" type="text/css" href="soapidle.css">
+    <meta content="Soap Game" name="description">
+    <meta content="xWafl" name="author">
+    <link href="soapidle.css" rel="stylesheet" type="text/css">
     <title id="metatitle">Soap Idle</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-  </head>
-  <body>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <title id="metatitle">Soap Idle</title>
+</head>
+<body>
     <div class="title">
-        <h1>Soap Idle</h1>
-        <!--<h4>Goal: </h4>-->
+        <h1>Soap Idle</h1><!--<h4>Goal: </h4>-->
         <!--Why not take a break?-->
         <!--Wallop!-->
     </div>
     <div class="buysoap">
-         <button id="getsoap">Buy Soap</button>
-         <p id="soapBuyPrice">Cost: </p>
+        <button id="getsoap">Buy Soap</button>
+        <p id="soapBuyPrice">Cost:</p>
     </div>
     <div class="sellsoap">
         <button id="opensellingmenu">Sell Soap</button>
-    <div class="lowerSoapPrice">
-        <button id="lessenSoapPrice">Lessen</button>
+        <div class="lowerSoapPrice">
+            <button id="lessenSoapPrice">Lessen</button>
+        </div>
+        <div class="raiseSoapPrice">
+            <button id="raiseSoapPrice">Raise</button>
+        </div>
+        <p id="soapSellPrice">Selling for:</p>
     </div>
-    <div class="raiseSoapPrice">
-        <button id="raiseSoapPrice">Raise</button>
-    </div>
-        <p id="soapSellPrice">Selling for: </p>
-    </div>
-    <div id="sellingmenubackground" class="sellingmenu">
-        <div id="sellingmenuarea" class="sellingmenuarea">
-            <div class=headingsellingmenu><h1 id="sellprice">Selling for:</h1></div>
-            <div class=lowersellingmenu>
-                <h3 id="sellchance">Chance of success:</h3>
-                <button id="lowerSoapPriceOnMenu" class="menuChangePrice">Lessen price</button>
-                <button id="raiseSoapPriceOnMenu" class="menuChangePrice">Raise price</button>
-                <button id="stopselling">Stop selling</button>
+    <div class="sellingmenu" id="sellingmenubackground">
+        <div class="sellingmenuarea" id="sellingmenuarea">
+            <div class="headingsellingmenu">
+                <h1 id="sellprice">Selling for:</h1>
             </div>
-						<div>
+            <div class="lowersellingmenu">
+                <h3 id="sellchance">Chance of success:</h3><button class="menuChangePrice" id="lowerSoapPriceOnMenu">Lessen price</button> <button class="menuChangePrice" id="raiseSoapPriceOnMenu">Raise price</button> <button id="stopselling">Stop selling</button>
+            </div>
+            <div>
                 <h3>Speed: 1 person/second</h3>
                 <h3>Status: Repulsive</h3>
                 <h3>You will automatically stop selling after your inventory runs out.</h3>
-					  </div>
+            </div>
         </div>
     </div>
-    <div id="workerMenu" class="workerMenu">
+    <div class="workerMenu" id="workerMenu">
         <table>
             <tr>
                 <th>Workers</th>
@@ -112,162 +111,375 @@
             </tr>
         </table>
     </div>
-    <div id="research" class="research1">
+    <div class="research1" id="research">
         <button id="resoapch">Resoapch</button>
         <p id="soapience">0 Soapience.</p>
     </div>
-    <div id="techMenu" class="techMenu">
+    <div class="techMenu" id="techMenu">
+        <button id="efficiency1">Efficiency</button>
+        <meta charset="UTF-8">
+        <meta content="Soap Game" name="description">
+        <meta content="xWafl" name="author">
+        <link href="soapidle.css" rel="stylesheet" type="text/css">
+        <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+        <div class="title">
+            <h1>Soap Idle</h1><!--<h4>Goal: </h4>-->
+            <!--Why not take a break?-->
+            <!--Wallop!-->
+        </div>
+        <div class="buysoap">
+            <button id="getsoap">Buy Soap</button>
+            <p id="soapBuyPrice">Cost:</p>
+        </div>
+        <div class="sellsoap">
+            <button id="opensellingmenu">Sell Soap</button>
+            <div class="lowerSoapPrice">
+                <button id="lessenSoapPrice">Lessen</button>
+            </div>
+            <div class="raiseSoapPrice">
+                <button id="raiseSoapPrice">Raise</button>
+            </div>
+            <p id="soapSellPrice">Selling for:</p>
+        </div>
+        <div class="sellingmenu" id="sellingmenubackground">
+            <div class="sellingmenuarea" id="sellingmenuarea">
+                <div class="headingsellingmenu">
+                    <h1 id="sellprice">Selling for:</h1>
+                </div>
+                <div class="lowersellingmenu">
+                    <h3 id="sellchance">Chance of success:</h3><button class="menuChangePrice" id="lowerSoapPriceOnMenu">Lessen price</button> <button class="menuChangePrice" id="raiseSoapPriceOnMenu">Raise price</button> <button id="stopselling">Stop selling</button>
+                </div>
+                <div>
+                    <h3>Speed: 1 person/second</h3>
+                    <h3>Status: Repulsive</h3>
+                    <h3>You will automatically stop selling after your inventory runs out.</h3>
+                </div>
+            </div>
+        </div>
+        <div class="workerMenu" id="workerMenu">
+            <table>
+                <tr>
+                    <th>Workers</th>
+                    <th>Cost</th>
+                    <th>Upkeep</th>
+                    <th>Amount</th>
+                    <th>Lay off</th>
+                    <th>Recruit</th>
+                    <th>Fire</th>
+                </tr>
+                <tr>
+                    <td><button id="buymarketer">Marketer</button></td>
+                    <td>$5</td>
+                    <td>No upkeep</td>
+                    <td id="marketerCount">0 workers</td>
+                    <td><button id="layoffmarketer">Lay off</button></td>
+                    <td><button id="recruitmarketer">Recruit</button></td>
+                    <td><button id="firemarketer">Fire</button></td>
+                </tr>
+                <tr id="marketermanagerrow">
+                    <td><button id="buymarketermanager">Marketer Manager</button></td>
+                    <td>$50</td>
+                    <td>No upkeep</td>
+                    <td id="marketerManagerCount">0 managers</td>
+                    <td><button id="layoffmarketermanager">Lay off</button></td>
+                    <td><button id="recruitmarketermanager">Recruit</button></td>
+                    <td><button id="firemarketermanager">Fire</button></td>
+                </tr>
+                <tr id="marketermanager2row">
+                    <td><button id="buymarketermanager2">Marketer Manager 2</button></td>
+                    <td>$150</td>
+                    <td>No upkeep</td>
+                    <td id="marketerManagerCount2">0 managers</td>
+                    <td><button id="layoffmarketermanager2">Lay off</button></td>
+                    <td><button id="recruitmarketermanager2">Recruit</button></td>
+                    <td><button id="firemarketermanager2">Fire</button></td>
+                </tr>
+                <tr>
+                    <td><button id="buybuyer">Soap Buyer</button></td>
+                    <td>$10</td>
+                    <td>$1 upkeep</td>
+                    <td id="buyerCount">0 workers</td>
+                    <td><button id="layoffbuyer">Lay off</button></td>
+                    <td><button id="recruitbuyer">Recruit</button></td>
+                    <td><button id="firebuyer">Fire</button></td>
+                </tr>
+                <tr id="soapbuyermanager">
+                    <td><button id="buybuyermanager">Buyer Manager</button></td>
+                    <td>$75</td>
+                    <td>$2.5 upkeep</td>
+                    <td id="buyerManagerCount">0 workers</td>
+                    <td><button id="layoffbuyermanager">Lay off</button></td>
+                    <td><button id="recruitbuyermanager">Recruit</button></td>
+                    <td><button id="firebuyermanager">Fire</button></td>
+                </tr>
+                <tr>
+                    <td><button id="buyresoapcher">Resoapcher</button></td>
+                    <td>$25</td>
+                    <td>$2.5 upkeep</td>
+                    <td id="resoapcherCount">0 workers</td>
+                    <td><button id="layoffresoapcher">Lay off</button></td>
+                    <td><button id="recruitresoapcher">Recruit</button></td>
+                    <td><button id="fireresoapcher">Fire</button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="research1" id="research">
+            <button id="resoapch">Resoapch</button>
+            <p id="soapience">0 Soapience.</p>
+        </div>
+        <div class="techMenu" id="techMenu">
+            <button id="efficiency1">Efficiency</button>
+            <table>
+                <tr>
+                    <th>Tech</th>
+                    <th>Cost</th>
+                    <th>Level</th>
+                </tr>
+                <tr class="bettermarketing1" id="bettermarketing1row">
+                    <td class="bettermarketing"><button id="techbettermarketing1">Better Marketing</button></td>
+                    <td class="bettermarketing">200 Soapience</td>
+                    <td class="bettermarketing">Level 1</td>
+                </tr>
+                <tr class="efficiency1&gt; &lt;td class=" id="efficiency1row">
+                    <td></td>
+                </tr>
+                <tr class="betterresoapch1" id="betterresoapch1row">
+                    <td class="betterresoapch"><button id="techbetterresoapch">Better Resoapch</button></td>
+                    <td class="betterresoapch">500 Soapience</td>
+                    <td class="betterresoapch">Level 1</td>
+                </tr>
+                <tr class="bettermarketing2" id="bettermarketing2row">
+                    <td class="bettermarketing"><button id="techbettermarketing2">Better Marketing</button></td>
+                    <td class="bettermarketing">750 Soapience</td>
+                    <td class="bettermarketing">Level 2</td>
+                </tr>
+                <tr class="discount1" id="discount1row">
+                    <td class="discount1"><button id="techdiscount1">Discount</button></td>
+                    <td class="discount1">750 Soapience</td>
+                    <td class="discount1">Level 1</td>
+                </tr>
+                <tr class="inventory1" id="inventory1row">
+                    <td class="inventory1"><button id="techinventory1">Inventory</button></td>
+                    <td class="inventory1">1000 Soapience</td>
+                    <td class="inventory1">Level 1</td>
+                </tr>
+                <tr class="discount2" id="discount2row">
+                    <td class="discount2"><button id="techdiscount2">Discount</button></td>
+                    <td class="discount2">1500 Soapience</td>
+                    <td class="discount2">Level 2</td>
+                </tr>
+                <tr class="betterresoapch2" id="betterresoapch2row">
+                    <td class="betterresoapch"><button id="techbetterresoapch2">Better Resoapch</button></td>
+                    <td class="betterresoapch">1500 Soapience</td>
+                    <td class="betterresoapch">Level 2</td>
+                </tr>
+                <tr class="bettermarketing3" id="bettermarketing3row">
+                    <td class="bettermarketing"><button id="techbettermarketing3">Better Marketing</button></td>
+                    <td class="bettermarketing">2000 Soapience</td>
+                    <td class="bettermarketing">Level 3</td>
+                </tr>
+                <tr class="philosoaphy" id="philosoaphyrow">
+                    <td class="philosoaphy"><button id="techphilosoaphy">Philosoaphy</button></td>
+                    <td class="philosoaphy">2000 Soapience</td>
+                    <td class="philosoaphy">Level 1</td>
+                </tr>
+                <tr class="techworkers" id="workersrow">
+                    <td class="techworkers"><button id="techworkers">Workers</button></td>
+                    <td class="techworkers">2500 Soapience</td>
+                    <td class="techworkers">Level 1</td>
+                </tr>
+                <tr class="inventory2" id="inventory2row">
+                    <td class="inventory2"><button id="techinventory2">Inventory</button></td>
+                    <td class="inventory2">3000 Soapience</td>
+                    <td class="inventory2">Level 2</td>
+                </tr>
+                <tr class="bettermarketing4" id="bettermarketing4row">
+                    <td class="bettermarketing"><button id="techbettermarketing4">Better Marketing</button></td>
+                    <td class="bettermarketing">4000 Soapience</td>
+                    <td class="bettermarketing">Level 4</td>
+                </tr>
+                <tr class="betterresoapch3" id="betterresoapch3row">
+                    <td class="betterresoapch3"><button id="techbetterresoapch3">Better Resoapch</button></td>
+                    <td class="betterresoapch3">4500 Soapience</td>
+                    <td class="betterresoapch3">Level 3</td>
+                </tr>
+                <tr class="invention" id="inventionrow">
+                    <td class="invention"><button id="techinvention">Invention</button></td>
+                    <td class="invention">5000 Soapience</td>
+                    <td class="invention">Level 1</td>
+                </tr>
+                <tr class="discount3" id="discount3row">
+                    <td class="discount3"><button id="techdiscount3">Discount</button></td>
+                    <td class="discount3">5000 Soapience</td>
+                    <td class="discount3">Level 3</td>
+                </tr>
+                <tr class="megamarketing1" id="megamarketing1row">
+                    <td class="megamarketing1"><button id="techmegamarketing1">Mega Marketing</button></td>
+                    <td class="megamarketing1">5000 Soapience</td>
+                    <td class="megamarketing1">Level 1</td>
+                </tr>
+                <tr class="qualitysoapupgrade" id="qualitysoapbad">
+                    <td class="qualitysoapupgrade"><button id="qualitysoapupgradebad">Quality Upgrade</button></td>
+                    <td class="qualitysoapupgrade">7500 Soapience</td>
+                    <td class="qualitysoapupgrade">Level 1</td>
+                </tr>
+                <tr class="bettermarketing5" id="bettermarketing5row">
+                    <td class="bettermarketing5"><button id="techbettermarketing5">Better Marketing</button></td>
+                    <td class="bettermarketing5">8000 Soapience</td>
+                    <td class="bettermarketing5">Level 5</td>
+                </tr>
+                <tr class="megamarketing2" id="megamarketing2row">
+                    <td class="megamarketing2"><button id="techmegamarketing2">Mega Marketing</button></td>
+                    <td class="megamarketing2">10K Soapience</td>
+                    <td class="megamarketing2">Level 2</td>
+                </tr>
+                <tr class="discount4row" id="discount4row">
+                    <td class="discount4"><button id="techdiscount4">Discount</button></td>
+                    <td class="discount4">10K Soapience</td>
+                    <td class="discount4">Level 4</td>
+                </tr>
+                <tr class="opticsrow" id="opticsrow">
+                    <td class="optics"><button id="techoptics">Optics</button></td>
+                    <td class="optics">10K Soapience</td>
+                    <td class="optics">Level 1</td>
+                </tr>
+            </table>
+        </div><br>
+        <div class="stats">
+            <p id="money"></p>
+            <p id="inventory"></p>
+            <p id="soapQuality"></p>
+            <div class="fidgetboxlooks" id="fidgetbox" onclick="fidgetspin()">
+                <p id="fidgetboxtext"></p>
+            </div><button id="restart">Restart</button>
+        </div>
+        <div class="opticsbox" id="opticsbox">
+            <h2 class="opticsboxtitle">Optical Analyzer</h2>
+            <div class="opticssquaresbox" id="opticssquares">
+                <div class="opticssquares" id="opticssquare1"></div>
+                <div class="opticssquares" id="opticssquare2"></div>
+                <div class="opticssquares" id="opticssquare3"></div>
+                <div class="opticssquares" id="opticssquare4"></div>
+                <div class="opticssquares" id="opticssquare5"></div>
+                <div class="opticssquares" id="opticssquare6"></div>
+                <div class="opticssquares" id="opticssquare7"></div>
+                <div class="opticssquares" id="opticssquare8"></div>
+            </div><button id="opticsanalyzer">Analyze</button> <button id="opticsanalyzerhelp">Help!</button>
+        </div>
+        <div class="samadvisormodal" id="samadvisormodal">
+            <div class="samadvisormodalstart" id="samadvisormodal1">
+                <p>A person around your age runs up to you and yells, "Hey! Is that you! I remember you! You sat behind me in economics back in high school! Name's Sam, remember? I heard you're starting a business! I'll help you!" You look him up and down and believe it - same nerdy glasses, the two freckles on his forehead. "Listen, I've got a masters degree in business," he says, "and I'll help you. I don't need pay. I'll work part-time, and you can rely on me for help. Take my deal?"</p><button id="acceptsam">Sure!</button> <button id="rejectsam">No thanks.</button>
+            </div>
+            <div class="samadvisormodalaccept" id="samadvisormodal2">
+                <p>"Great!" he exclaims, bursting with energy. "I'll add a button where you can call me anytime! By the way, I'll check in on you to make sure you're not going to run out of money. Those things happen. Shall we start, then?"</p><button id="finishsam">Let's go!</button>
+            </div>
+            <div class="samadvisormodalreject" id="samadvisormodal3">
+                <p>"C'mon, why not? You're going to need some sort of financial advisor later on anyway. Having one now will just streamline and help you." Seeing the no expression on your face, he adds, "I'll add a button where you can call me anytime for help. I'll also check in from time to time to give pointers. Deal?"</p><button id="finishsam2">Fine.</button>
+            </div>
+        </div>
+        <div class="tutorial1" id="tutorial1box">
+            <p>Let's get started! Click the "Buy Soap" button to buy some soap.</p><button id="tutorial1">Okay</button>
+        </div>
+        <div class="tutorial2" id="tutorial2box">
+            <p>You need to sell your hard-earned soap! First, raise the price so that you'll make a profit. The higher you price your soap, the longer it takes for someone to buy it. Click the "Sell Soap" button to try and sell someone your soap. It will take a while before someone actually buys your soap.</p><button id="tutorial2">Okay</button>
+        </div>
+        <div class="tutorial3" id="tutorial3box">
+            <p>Now keep buying and selling for profit! Remember that you have a limited inventory space, which is 50 soap at the moment. Don't worry, it'll get easier later. A final trick: if you click the sell soap button and hold down the enter key, it will spam click for you at an alarming rate.</p><button id="tutorial3">Okay</button>
+        </div>
+        <div class="tutorial4" id="tutorial4box">
+            <p>Wowzers! You've made $5! You can now choose to start buying workers, or start researching technology. Don't worry, the other one that you don't choose unlocks later.</p><button id="unlockWorkers">Workers</button> <button id="unlockTech">Technology</button>
+        </div>
+        <div class="workertutorial" id="workertutorial1box">
+            <p>Now you have workers. These are people you can hire for a cost that will help automate things, like buying or selling. Some workers require upkeep but the beginner workers don't. Buying workers can be the biggest help to early-game. Let's go over what some of the jobs do!</p><button id="workertutorial1">Okay</button>
+        </div>
+        <div class="workertutorial" id="workertutorial2box">
+            <p>First up we have the marketer. It's honestly pretty simple, he clicks the sell soap button for you at the rate of 1 click/second. Multiple marketers means more clicks.</p><button id="workertutorial2">Okay</button>
+        </div>
+        <div class="workertutorial" id="workertutorial3box">
+            <p>Then we have the soap buyer. He clicks the buy soap button for you at the rate of 1 click every 10 seconds. Remember that you may need to assist him before you get enough buyers to get past the marketer rate.</p><button id="workertutorial3">Okay</button>
+        </div>
+        <div class="workertutorial" id="workertutorial4box">
+            <p>Finally, the resoapcher. He clicks the resoapch button for you once a second. If you don't have tech unlocked yet, he will unlock it for you.</p><button id="workertutorial4">Okay</button>
+        </div>
+        <div class="workertutorial" id="workertutorial5box">
+            <p>You've now unlocked a manager. These boys simply buy a worker of their type of job every 5 seconds as long as you can afford it. For example, a marketer manager buys marketers, and a marketer manager manager buys marketer managers, which buy marketers.</p><button id="workertutorial5">Okay</button>
+        </div>
+        <div class="techtutorial1" id="techtutorial1box">
+            <p>Now you have tech. These are things that you can unlock using Soapience which will help increase bonuses. Some technologies are one-time techs but others are repeated (they can be bought multiple times). There are also "plot-point" techs, which are techs that advance the game.</p><button id="techtutorial1">Okay</button>
+        </div>
+        <div class="opticstutorial" id="opticstutorial1box">
+            <p>Now you have the optical analyzer. Fancy piece of work, but the thing is, nobody really knows how it works. Idea is that the more blue boxes you have, the better your workers do. Thing is, if you have too few or no boxes at all, they work worse.</p><button id="opticstutorial1">Okay</button>
+        </div>
+        <div class="opticstutorial" id="opticstutorial2box">
+            <p>So what to do with this thing? Well, when the boxes get low, you click the Analyze button to fill them up. Every 5 seconds, a box disappears. 4 boxes is the point where workers start doing less work, so be careful. Good luck!</p><button id="opticstutorial2">Okay</button>
+        </div><button class="debugbuttons" id="freemoney">Free money</button><button class="debugbuttons" id="freesoapience">Free soapience</button>
+        <script src="src/basicstuff.js" type="text/javascript">
+        </script>
+        <script src="src/selling.js" type="text/javascript">
+        </script>
         <table>
             <tr>
                 <th>Tech</th>
                 <th>Cost</th>
                 <th>Level</th>
             </tr>
-            <tr id="bettermarketing1row" class="bettermarketing1">
+            <tr class="bettermarketing1" id="bettermarketing1row">
                 <td class="bettermarketing"><button id="techbettermarketing1">Better Marketing</button></td>
                 <td class="bettermarketing">200 Soapience</td>
-                <td class="bettermarketing"> Level 1</td>
-            <tr id="betterresoapch1row" class="betterresoapch1">
+                <td class="bettermarketing">Level 1</td>
+            </tr>
+            <tr class="efficiency1" id="efficiency1row">
+                <td class="efficiency" id=efficiency1"><button id="techefficiency1">Efficiency</button></td>
+		<td class="efficiency">350 Soapience</td>
+		<td class="efficiency">Level 1</td>
+            </tr>
+            <tr class="betterresoapch1" id="betterresoapch1row">
                 <td class="betterresoapch"><button id="techbetterresoapch">Better Resoapch</button></td>
                 <td class="betterresoapch">500 Soapience</td>
                 <td class="betterresoapch">Level 1</td>
             </tr>
-            <tr id="bettermarketing2row" class="bettermarketing2">
+            <tr class="bettermarketing2" id="bettermarketing2row">
                 <td class="bettermarketing"><button id="techbettermarketing2">Better Marketing</button></td>
                 <td class="bettermarketing">750 Soapience</td>
                 <td class="bettermarketing">Level 2</td>
             </tr>
-            <tr id="discount1row" class="discount1">
+            <tr class="discount1" id="discount1row">
                 <td class="discount1"><button id="techdiscount1">Discount</button></td>
                 <td class="discount1">750 Soapience</td>
                 <td class="discount1">Level 1</td>
             </tr>
-            <tr id="inventory1row" class="inventory1">
+            <tr class="inventory1" id="inventory1row">
                 <td class="inventory1"><button id="techinventory1">Inventory</button></td>
                 <td class="inventory1">1000 Soapience</td>
                 <td class="inventory1">Level 1</td>
             </tr>
-            <tr id="discount2row" class="discount2">
+            <tr class="discount2" id="discount2row">
                 <td class="discount2"><button id="techdiscount2">Discount</button></td>
                 <td class="discount2">1500 Soapience</td>
                 <td class="discount2">Level 2</td>
             </tr>
-            <tr id="betterresoapch2row" class="betterresoapch2">
+            <tr class="betterresoapch2" id="betterresoapch2row">
                 <td class="betterresoapch"><button id="techbetterresoapch2">Better Resoapch</button></td>
                 <td class="betterresoapch">1500 Soapience</td>
                 <td class="betterresoapch">Level 2</td>
             </tr>
-            <tr id="bettermarketing3row" class="bettermarketing3">
+            <tr class="bettermarketing3" id="bettermarketing3row">
                 <td class="bettermarketing"><button id="techbettermarketing3">Better Marketing</button></td>
                 <td class="bettermarketing">2000 Soapience</td>
                 <td class="bettermarketing">Level 3</td>
             </tr>
-            <tr id="philosoaphyrow" class="philosoaphy">
+            <tr class="philosoaphy" id="philosoaphyrow">
                 <td class="philosoaphy"><button id="techphilosoaphy">Philosoaphy</button></td>
                 <td class="philosoaphy">2000 Soapience</td>
                 <td class="philosoaphy">Level 1</td>
             </tr>
-            <tr id="workersrow" class="techworkers">
+            <tr class="techworkers" id="workersrow">
                 <td class="techworkers"><button id="techworkers">Workers</button></td>
                 <td class="techworkers">2500 Soapience</td>
                 <td class="techworkers">Level 1</td>
             </tr>
-            <tr id="inventory2row" class="inventory2">
-                <td class="inventory2"><button id="techinventory2">Inventory</button></td>
-                <td class="inventory2">3000 Soapience</td>
-                <td class="inventory2">Level 2</td>
-            </tr>
-            <tr id="bettermarketing4row" class="bettermarketing4">
-                <td class="bettermarketing"><button id="techbettermarketing4">Better Marketing</button></td>
-                <td class="bettermarketing">4000 Soapience</td>
-                <td class="bettermarketing">Level 4</td>
-            </tr>
-            <tr id="betterresoapch3row" class="betterresoapch3">
-                <td class="betterresoapch3"><button id="techbetterresoapch3">Better Resoapch</button></td>
-                <td class="betterresoapch3">4500 Soapience</td>
-                <td class="betterresoapch3">Level 3</td>
-            </tr>
-            <tr id="inventionrow" class="invention">
-                <td class="invention"><button id="techinvention">Invention</button></td>
-                <td class="invention">5000 Soapience</td>
-                <td class="invention">Level 1</td>
-            </tr>
-            <tr id="discount3row" class="discount3">
-                <td class="discount3"><button id="techdiscount3">Discount</button></td>
-                <td class="discount3">5000 Soapience</td>
-                <td class="discount3">Level 3</td>
-            </tr>
-            <tr id="megamarketing1row" class="megamarketing1">
-                <td class="megamarketing1"><button id="techmegamarketing1">Mega Marketing</button></td>
-                <td class="megamarketing1">5000 Soapience</td>
-                <td class="megamarketing1">Level 1</td>
-            </tr>
-            <tr id="qualitysoapbad" class="qualitysoapupgrade">
-                <td class="qualitysoapupgrade"><button id="qualitysoapupgradebad">Quality Upgrade</button></td>
-                <td class="qualitysoapupgrade">7500 Soapience</td>
-                <td class="qualitysoapupgrade">Level 1</td>
-            </tr>
-            <tr id="bettermarketing5row" class="bettermarketing5">
-                <td class="bettermarketing5"><button id="techbettermarketing5">Better Marketing</button></td>
-                <td class="bettermarketing5">8000 Soapience</td>
-                <td class="bettermarketing5">Level 5</td>
-            </tr>
-            <tr id="megamarketing2row" class="megamarketing2">
-                <td class="megamarketing2"><button id="techmegamarketing2">Mega Marketing</button></td>
-                <td class="megamarketing2">10K Soapience</td>
-                <td class="megamarketing2">Level 2</td>
-            </tr>
-            <tr id="discount4row" class="discount4row">
-                <td class="discount4"><button id="techdiscount4">Discount</button></td>
-                <td class="discount4">10K Soapience</td>
-                <td class="discount4">Level 4</td>
-            </tr>
-            <tr id="opticsrow" class="opticsrow">
-               <td class="optics"><button id="techoptics">Optics</button></td>
-               <td class="optics">10K Soapience</td>
-               <td class="optics">Level 1</td>
-            </tr>
-        </table>
-    </div>
-    <br>
-    <div class="stats">
-        <p id="money"></p>
-        <p id="inventory"></p>
-        <p id="soapQuality"></p>
-        <div id="fidgetbox" class="fidgetboxlooks" onclick="fidgetspin()"><p id="fidgetboxtext"></p></div>
-        <button id="restart">Restart</button>
-    </div>
-    <div id="opticsbox" class="opticsbox">
-        <h2 class="opticsboxtitle">Optical Analyzer</h2>
-        <div id="opticssquares" class="opticssquaresbox">
-            <div id="opticssquare1" class="opticssquares"></div>
-            <div id="opticssquare2" class="opticssquares"></div>
-            <div id="opticssquare3" class="opticssquares"></div>
-            <div id="opticssquare4" class="opticssquares"></div>
-            <div id="opticssquare5" class="opticssquares"></div>
-            <div id="opticssquare6" class="opticssquares"></div>
-            <div id="opticssquare7" class="opticssquares"></div>
-            <div id="opticssquare8" class="opticssquares"></div>
-        </div>
-        <button id="opticsanalyzer">Analyze</button>
-        <button id="opticsanalyzerhelp">Help!</button>
-    </div>
-    <div id="samadvisormodal" class="samadvisormodal">
-        <div id="samadvisormodal1" class="samadvisormodalstart">
-            <p>A person around your age runs up to you and yells, "Hey! Is that you! I remember you! You sat behind me in economics back in high school! Name's Sam, remember? I heard you're starting a business! I'll help you!" You look him up and down and believe it - same nerdy glasses, the two freckles on his forehead. "Listen, I've got a masters degree in business," he says, "and I'll help you. I don't need pay. I'll work part-time, and you can rely on me for help. Take my deal?"</p>
-            <button id="acceptsam">Sure!</button>
-            <button id="rejectsam">No thanks.</button>
-        </div>
-        <div id="samadvisormodal2" class="samadvisormodalaccept">
-            <p>"Great!" he exclaims, bursting with energy. "I'll add a button where you can call me anytime! By the way, I'll check in on you to make sure you're not going to run out of money. Those things happen. Shall we start, then?"</p>
-            <button id="finishsam">Let's go!</button>
-        </div>
-        <div id="samadvisormodal3" class="samadvisormodalreject">
-            <p>"C'mon, why not? You're going to need some sort of financial advisor later on anyway. Having one now will just streamline and help you." Seeing the no expression on your face, he adds, "I'll add a button where you can call me anytime for help. I'll also check in from time to time to give pointers. Deal?"</p>
-            <button id="finishsam2">Fine.</button>
-        </div>
-    </div>
-    <!--<div id="savegame" class="savegame">
+            <tr class="inventory2" id="">
+                <!--<div id="savegame" class="savegame">
         <button id="savebutton" class="savebutton">Save</button>
     </div>
     <div id="exportfile" class="exportfile">
@@ -277,82 +489,146 @@
         <button id="importbutton" class="importbutton">Import</button>
     </div>
     -->
-    <div id="tutorial1box" class="tutorial1">
-        <p>
-            Let's get started! Click the "Buy Soap" button to buy some soap.
-        </p>
-        <button id="tutorial1">Okay</button>
+            </tr>
+        </table>="inventory2row"&gt;
+        <table>
+            <tr>
+                <td class="inventory2"><button id="techinventory2">Inventory</button></td>
+                <td class="inventory2">3000 Soapience</td>
+                <td class="inventory2">Level 2</td>
+            </tr>
+            <tr class="bettermarketing4" id="bettermarketing4row">
+                <td class="bettermarketing"><button id="techbettermarketing4">Better Marketing</button></td>
+                <td class="bettermarketing">4000 Soapience</td>
+                <td class="bettermarketing">Level 4</td>
+            </tr>
+            <tr class="betterresoapch3" id="betterresoapch3row">
+                <td class="betterresoapch3"><button id="techbetterresoapch3">Better Resoapch</button></td>
+                <td class="betterresoapch3">4500 Soapience</td>
+                <td class="betterresoapch3">Level 3</td>
+            </tr>
+            <tr class="invention" id="inventionrow">
+                <td class="invention"><button id="techinvention">Invention</button></td>
+                <td class="invention">5000 Soapience</td>
+                <td class="invention">Level 1</td>
+            </tr>
+            <tr class="discount3" id="discount3row">
+                <td class="discount3"><button id="techdiscount3">Discount</button></td>
+                <td class="discount3">5000 Soapience</td>
+                <td class="discount3">Level 3</td>
+            </tr>
+            <tr class="megamarketing1" id="megamarketing1row">
+                <td class="megamarketing1"><button id="techmegamarketing1">Mega Marketing</button></td>
+                <td class="megamarketing1">5000 Soapience</td>
+                <td class="megamarketing1">Level 1</td>
+            </tr>
+            <tr class="qualitysoapupgrade" id="qualitysoapbad">
+                <td class="qualitysoapupgrade"><button id="qualitysoapupgradebad">Quality Upgrade</button></td>
+                <td class="qualitysoapupgrade">7500 Soapience</td>
+                <td class="qualitysoapupgrade">Level 1</td>
+            </tr>
+            <tr class="bettermarketing5" id="bettermarketing5row">
+                <td class="bettermarketing5"><button id="techbettermarketing5">Better Marketing</button></td>
+                <td class="bettermarketing5">8000 Soapience</td>
+                <td class="bettermarketing5">Level 5</td>
+            </tr>
+            <tr class="megamarketing2" id="megamarketing2row">
+                <td class="megamarketing2"><button id="techmegamarketing2">Mega Marketing</button></td>
+                <td class="megamarketing2">10K Soapience</td>
+                <td class="megamarketing2">Level 2</td>
+            </tr>
+            <tr class="discount4row" id="discount4row">
+                <td class="discount4"><button id="techdiscount4">Discount</button></td>
+                <td class="discount4">10K Soapience</td>
+                <td class="discount4">Level 4</td>
+            </tr>
+            <tr class="opticsrow" id="opticsrow">
+                <td class="optics"><button id="techoptics">Optics</button></td>
+                <td class="optics">10K Soapience</td>
+                <td class="optics">Level 1</td>
+            </tr>
+        </table>
+    </div><br>
+    <div class="stats">
+        <p id="money"></p>
+        <p id="inventory"></p>
+        <p id="soapQuality"></p>
+        <div class="fidgetboxlooks" id="fidgetbox" onclick="fidgetspin()">
+            <p id="fidgetboxtext"></p>
+        </div><button id="restart">Restart</button>
     </div>
-    <div id="tutorial2box" class="tutorial2">
-        <p>
-            You need to sell your hard-earned soap! First, raise the price so that you'll make a profit. The higher you price your soap, the longer it takes for someone to buy it. Click the "Sell Soap" button to try and sell someone your soap. It will take a while before someone actually buys your soap.
-        </p>
-        <button id="tutorial2">Okay</button>
+    <div class="opticsbox" id="opticsbox">
+        <h2 class="opticsboxtitle">Optical Analyzer</h2>
+        <div class="opticssquaresbox" id="opticssquares">
+            <div class="opticssquares" id="opticssquare1"></div>
+            <div class="opticssquares" id="opticssquare2"></div>
+            <div class="opticssquares" id="opticssquare3"></div>
+            <div class="opticssquares" id="opticssquare4"></div>
+            <div class="opticssquares" id="opticssquare5"></div>
+            <div class="opticssquares" id="opticssquare6"></div>
+            <div class="opticssquares" id="opticssquare7"></div>
+            <div class="opticssquares" id="opticssquare8"></div>
+        </div><button id="opticsanalyzer">Analyze</button> <button id="opticsanalyzerhelp">Help!</button>
     </div>
-    <div id="tutorial3box" class="tutorial3">
-        <p>
-            Now keep buying and selling for profit! Remember that you have a limited inventory space, which is 50 soap at the moment. Don't worry, it'll get easier later. A final trick: if you click the sell soap button and hold down the enter key, it will spam click for you at an alarming rate.
-        </p>
-        <button id="tutorial3">Okay</button>
+    <div class="samadvisormodal" id="samadvisormodal">
+        <div class="samadvisormodalstart" id="samadvisormodal1">
+            <p>A person around your age runs up to you and yells, "Hey! Is that you! I remember you! You sat behind me in economics back in high school! Name's Sam, remember? I heard you're starting a business! I'll help you!" You look him up and down and believe it - same nerdy glasses, the two freckles on his forehead. "Listen, I've got a masters degree in business," he says, "and I'll help you. I don't need pay. I'll work part-time, and you can rely on me for help. Take my deal?"</p><button id="acceptsam">Sure!</button> <button id="rejectsam">No thanks.</button>
+        </div>
+        <div class="samadvisormodalaccept" id="samadvisormodal2">
+            <p>"Great!" he exclaims, bursting with energy. "I'll add a button where you can call me anytime! By the way, I'll check in on you to make sure you're not going to run out of money. Those things happen. Shall we start, then?"</p><button id="finishsam">Let's go!</button>
+        </div>
+        <div class="samadvisormodalreject" id="samadvisormodal3">
+            <p>"C'mon, why not? You're going to need some sort of financial advisor later on anyway. Having one now will just streamline and help you." Seeing the no expression on your face, he adds, "I'll add a button where you can call me anytime for help. I'll also check in from time to time to give pointers. Deal?"</p><button id="finishsam2">Fine.</button>
+        </div>
+    </div><!--<div id="savegame" class="savegame">
+        <button id="savebutton" class="savebutton">Save</button>
     </div>
-    <div id="tutorial4box" class="tutorial4">
-        <p>
-            Wowzers! You've made $5! You can now choose to start buying workers, or start researching technology. Don't worry, the other one that you don't choose unlocks later.
-        </p>
-        <button id="unlockWorkers">Workers</button>
-        <button id="unlockTech">Technology</button>
+    <div id="exportfile" class="exportfile">
+        <button id="exportbutton" class="exportbutton">Export</button>
     </div>
-    <div id="workertutorial1box" class="workertutorial">
-        <p>
-            Now you have workers. These are people you can hire for a cost that will help automate things, like buying or selling. Some workers require upkeep but the beginner workers don't. Buying workers can be the biggest help to early-game. Let's go over what some of the jobs do!
-        </p>
-        <button id="workertutorial1">Okay</button>
+    <div id="importfile" class="importfile">
+        <button id="importbutton" class="importbutton">Import</button>
     </div>
-    <div id="workertutorial2box" class="workertutorial">
-        <p>
-            First up we have the marketer. It's honestly pretty simple, he clicks the sell soap button for you at the rate of 1 click/second. Multiple marketers means more clicks.
-        </p>
-        <button id="workertutorial2">Okay</button>
+    -->
+    <div class="tutorial1" id="tutorial1box">
+        <p>Let's get started! Click the "Buy Soap" button to buy some soap.</p><button id="tutorial1">Okay</button>
     </div>
-    <div id="workertutorial3box" class="workertutorial">
-        <p>
-            Then we have the soap buyer. He clicks the buy soap button for you at the rate of 1 click every 10 seconds. Remember that you may need to assist him before you get enough buyers to get past the marketer rate.
-        </p>
-        <button id="workertutorial3">Okay</button>
+    <div class="tutorial2" id="tutorial2box">
+        <p>You need to sell your hard-earned soap! First, raise the price so that you'll make a profit. The higher you price your soap, the longer it takes for someone to buy it. Click the "Sell Soap" button to try and sell someone your soap. It will take a while before someone actually buys your soap.</p><button id="tutorial2">Okay</button>
     </div>
-    <div id="workertutorial4box" class="workertutorial">
-        <p>
-            Finally, the resoapcher. He clicks the resoapch button for you once a second. If you don't have tech unlocked yet, he will unlock it for you.
-        </p>
-        <button id="workertutorial4">Okay</button>
+    <div class="tutorial3" id="tutorial3box">
+        <p>Now keep buying and selling for profit! Remember that you have a limited inventory space, which is 50 soap at the moment. Don't worry, it'll get easier later. A final trick: if you click the sell soap button and hold down the enter key, it will spam click for you at an alarming rate.</p><button id="tutorial3">Okay</button>
     </div>
-    <div id="workertutorial5box" class="workertutorial">
-        <p>
-            You've now unlocked a manager. These boys simply buy a worker of their type of job every 5 seconds as long as you can afford it. For example, a marketer manager buys marketers, and a marketer manager manager buys marketer managers, which buy marketers.
-        </p>
-        <button id="workertutorial5">Okay</button>
+    <div class="tutorial4" id="tutorial4box">
+        <p>Wowzers! You've made $5! You can now choose to start buying workers, or start researching technology. Don't worry, the other one that you don't choose unlocks later.</p><button id="unlockWorkers">Workers</button> <button id="unlockTech">Technology</button>
     </div>
-    <div id="techtutorial1box" class="techtutorial1">
-        <p>
-            Now you have tech. These are things that you can unlock using Soapience which will help increase bonuses. Some technologies are one-time techs but others are repeated (they can be bought multiple times). There are also "plot-point" techs, which are techs that advance the game.
-        </p>
-        <button id="techtutorial1">Okay</button>
+    <div class="workertutorial" id="workertutorial1box">
+        <p>Now you have workers. These are people you can hire for a cost that will help automate things, like buying or selling. Some workers require upkeep but the beginner workers don't. Buying workers can be the biggest help to early-game. Let's go over what some of the jobs do!</p><button id="workertutorial1">Okay</button>
     </div>
-    <div id="opticstutorial1box" class="opticstutorial">
-        <p>
-            Now you have the optical analyzer. Fancy piece of work, but the thing is, nobody really knows how it works. Idea is that the more blue boxes you have, the better your workers do. Thing is, if you have too few or no boxes at all, they work worse.
-        </p>
-        <button id="opticstutorial1">Okay</button>
+    <div class="workertutorial" id="workertutorial2box">
+        <p>First up we have the marketer. It's honestly pretty simple, he clicks the sell soap button for you at the rate of 1 click/second. Multiple marketers means more clicks.</p><button id="workertutorial2">Okay</button>
     </div>
-    <div id="opticstutorial2box" class="opticstutorial">
-        <p>
-            So what to do with this thing? Well, when the boxes get low, you click the Analyze button to fill them up. Every 5 seconds, a box disappears. 4 boxes is the point where workers start doing less work, so be careful. Good luck!
-        </p>
-        <button id="opticstutorial2">Okay</button>
+    <div class="workertutorial" id="workertutorial3box">
+        <p>Then we have the soap buyer. He clicks the buy soap button for you at the rate of 1 click every 10 seconds. Remember that you may need to assist him before you get enough buyers to get past the marketer rate.</p><button id="workertutorial3">Okay</button>
     </div>
-    <button id="freemoney" class="debugbuttons">Free money</button>
-    <button id="freesoapience" class="debugbuttons">Free soapience</button>
-    <script type="text/javascript" src="src/basicstuff.js"></script>
-    <script type="text/javascript" src="src/selling.js"></script>
-  </body>
+    <div class="workertutorial" id="workertutorial4box">
+        <p>Finally, the resoapcher. He clicks the resoapch button for you once a second. If you don't have tech unlocked yet, he will unlock it for you.</p><button id="workertutorial4">Okay</button>
+    </div>
+    <div class="workertutorial" id="workertutorial5box">
+        <p>You've now unlocked a manager. These boys simply buy a worker of their type of job every 5 seconds as long as you can afford it. For example, a marketer manager buys marketers, and a marketer manager manager buys marketer managers, which buy marketers.</p><button id="workertutorial5">Okay</button>
+    </div>
+    <div class="techtutorial1" id="techtutorial1box">
+        <p>Now you have tech. These are things that you can unlock using Soapience which will help increase bonuses. Some technologies are one-time techs but others are repeated (they can be bought multiple times). There are also "plot-point" techs, which are techs that advance the game.</p><button id="techtutorial1">Okay</button>
+    </div>
+    <div class="opticstutorial" id="opticstutorial1box">
+        <p>Now you have the optical analyzer. Fancy piece of work, but the thing is, nobody really knows how it works. Idea is that the more blue boxes you have, the better your workers do. Thing is, if you have too few or no boxes at all, they work worse.</p><button id="opticstutorial1">Okay</button>
+    </div>
+    <div class="opticstutorial" id="opticstutorial2box">
+        <p>So what to do with this thing? Well, when the boxes get low, you click the Analyze button to fill them up. Every 5 seconds, a box disappears. 4 boxes is the point where workers start doing less work, so be careful. Good luck!</p><button id="opticstutorial2">Okay</button>
+    </div><button class="debugbuttons" id="freemoney">Free money</button> <button class="debugbuttons" id="freesoapience">Free soapience</button> 
+    <script src="src/basicstuff.js" type="text/javascript">
+    </script> 
+    <script src="src/selling.js" type="text/javascript">
+    </script>
+</body>
 </html>
