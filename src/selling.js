@@ -57,6 +57,8 @@ function calcChance () {
 function sellingLoop () {
 	sellSoapChance();
 	sellerInterval = setTimeout(sellingLoop, sellingEff);
+	document.getElementById("sellingmenumoney").innerHTML = "Money: $" + money.toFixed(2);
+	document.getElementById("sellingmenuinventory").innerHTML = soapInventory + "/" + soapMaxInventory + " Inventory";
 }
 
 function stopSelling () {
