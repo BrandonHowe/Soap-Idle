@@ -9,6 +9,9 @@ function sellasoap() {
             tutorial3showing = 0;
         }
     }
+    if (soapInventory < 1) {
+	    stopSelling();
+    }
 }
 
 function sellSoapChance() {
