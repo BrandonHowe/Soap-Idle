@@ -68,7 +68,7 @@ function stopSelling () {
 	document.getElementById("sellingmenubackground").style.display = "none";
 	document.getElementById("sellingmenuarea").style.display = "none";
 	sellingEffArchive = sellingEff;
-	clearInterval(sellerInterval);
+	clearTimeout(sellerInterval);
 }
 
 document.getElementById("raiseSoapPrice").addEventListener("click", raiseSoapPrice);
