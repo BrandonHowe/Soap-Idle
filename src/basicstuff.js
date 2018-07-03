@@ -524,6 +524,16 @@ function techmegamarketing2 () {
         sellSoapChanceModifier = 1.5 * soapSellChanceModifier;
         soapience = soapience - 10000;
         megamarketingbought++;
+        document.getElementById('megamarketing2row').style.display = 'none';
+    }
+  document.getElementById('soapience').innerHTML = soapience + " Soapience.";
+}
+
+function techmegamarketing2 () {
+    if (soapience >= 10000) {
+        sellSoapChanceModifier = 1.5 * soapSellChanceModifier;
+        soapience = soapience - 10000;
+        megamarketingbought++;
         document.getElementById("megamarketing2row").style.display = "none";
     }
     document.getElementById("soapience").innerHTML = soapience + " Soapience.";
