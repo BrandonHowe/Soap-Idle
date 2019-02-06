@@ -1,2 +1,2 @@
-# Soap-Idle
+# Soap-Idle (UNDER RECONSTRUCTION)
 The Soap Game.
